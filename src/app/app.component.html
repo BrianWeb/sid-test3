@@ -1,0 +1,220 @@
+
+
+<div class="container-fluid">
+
+  <div id="top_section">
+
+    <div class="row align-items-start ">
+
+      <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-4" id="logoCol">
+        <a href="home">
+          <div id="logo">
+            <!--<img src="..\assets\images\logo_with_company_name.jpg" id="logoWithCompanyName">-->
+            <img src="..\assets\images\logo.jpg" id="logoImage">
+
+            <div id="company_name">
+              Sid's Plumbing
+            </div>
+            <div id="company_name_sub_text">
+              Plumbing &amp; Heating Services
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-8 ">
+
+        <div class="row">
+
+          <div class="col-12 col-sm-12 col-md-8 col-lg-9 col-xl-9  contactCol customMargin">
+            <a href="callto:00353866049361 ">
+              <span>
+                <i class="fa fa-phone" aria-hidden="true"></i>&nbsp;
+                <!--<span id="callUsColText">Call us 24/7 </span>-->
+                <span class="contactText"> 086&nbsp;604&nbsp;9361</span>
+              </span>
+            </a>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 customMargin contactCol ">
+            <!-- <a href="callto:00353866049361">
+            <span>
+              <i class="fa fa-mobile fa-2x" aria-hidden="true"></i>&nbsp;
+              <span class="contactText">086&nbsp;6049361</span>
+            </span>-->
+            <a href="https://wa.me/353866049361?text=Plumbing%Enquiry">
+              <span id="whatsapp">
+                <i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i>&nbsp;
+                <span class="contactText"> WhatsApp chat</span>
+              </span>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-10  offset-xl-2 contactCol customMargin">
+            <a href="mailto:sidsplumbing@gmail.com">
+              <span>
+                <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
+                <span class="contactText">
+                  <!--<span [innerHTML]="emailAddress"></span>-->
+                  <span> sidsplumbing@gmail.com</span>
+                </span>
+              </span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div><!--/top_section-->
+
+  </div><!--/<div id="top_section container-fluid">-->
+  <!-- The navigation menu -->
+  <div class="row">
+
+    <div class="scrollmenu">
+      <!--Products-->
+      <!--<a data-toggle="collapse" href="#collapsibleProjectsDiv" aria-expanded="false" aria-controls="collapsibleProjectsDiv">-->
+
+      <a href="home">
+        Home
+      </a>
+
+      <a routerLink="/plumbing-services" routerLinkActive="active">Services</a>
+
+      <!--<i id="productsChevron" class="fa fa-lg fa-chevron-down pull-right" aria-hidden="true"></i>-->
+      <!--Glyphs not longer supported in BS4<span id="projectsMoreLessTriangle" class="glyphicon glyphicon-menu-down" aria-hidden="false"></span>-->
+      <!-- </a>-->
+
+      <a routerLink="/emergency-plumbing-prices/" routerLinkActive="active">
+        Rates
+        <!--<span id="productsMoreLessTriangle" class="glyphicon glyphicon-menu-down pull-right" aria-hidden="true"></span>-->
+      </a>
+
+      <a routerLink="/areas/" routerLinkActive="active">
+        Areas
+      </a>
+      <!--<span id="productsMoreLessTriangle" class="glyphicon glyphicon-menu-down pull-right" aria-hidden="true"></span>-->
+
+      <a routerLink="/faqs" routerLinkActive="active">
+        FAQ
+      </a>
+
+      <a routerLink="/about-us" routerLinkActive="active">
+        About
+        <!--<span id="productsMoreLessTriangle" class="glyphicon glyphicon-menu-down pull-right" aria-hidden="true"></span>-->
+      </a>
+
+      <a routerLink="/contact-dublin-plumber/" routerLinkActive="active">
+        Contact
+        <!--<span id="productsMoreLessTriangle" class="glyphicon glyphicon-menu-down pull-right" aria-hidden="true"></span>-->
+      </a>
+
+
+    </div><!--/navbar row-->
+  </div> <!--Container-fluid-->
+  <!-- /*Overlay NAV BAR-->
+
+  <div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <a href="#">Home</a>
+      <a routerLink="/plumbing-services" routerLinkActive="active">Services</a>
+      <a href="#">Areas</a>
+      <a href="#">FAQ</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+
+    </div>
+
+  </div>
+
+  <div class="row contactCol" id="burgerBar">
+    <span onclick="openNav()">&#9776; Menu</span>
+  </div>
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.display = "block";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.display = "none";
+    }
+  </script>
+
+
+  <div id="routerContainer">
+    <router-outlet></router-outlet>
+  </div>
+
+  <div id="commonFooter" class="row">
+ 
+    <div class="container">
+      <div class="row">
+
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+
+          <h3>Emergency Plumber Dublin</h3>
+          <p>Plumber Dublin - Sid’s Plumbing Services Established in 1976 in North Dublin. Plumbing &amp; Heating - Emergency Plumbing &amp; Heating - Commercial Plumbing - Residential Plumbing Dublin</p>
+        </div>
+
+        <div class="col-12 col-sm-6   col-md-3 offset-md-1   col-lg-3 offset-lg-1   col-xl-3  offset-xl-1  ">
+
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li><a href="https://sidsplumbing.ie/contact-dublin-plumber/" aria-current="page">Contact</a></li>
+            <li><a href="https://sidsplumbing.ie/areas/">Areas</a></li>
+            <li><a href="https://sidsplumbing.ie/faqs/">FAQs</a></li>
+            <li><a href="https://sidsplumbing.ie/non-emergency-plumbing-prices/">Non-Emergency</a></li>
+            <li><a href="https://sidsplumbing.ie/emergency-plumbing-prices/">Emergency Rates</a></li>
+            <li><a href="https://sidsplumbing.ie/blog/">Blog</a></li>
+          </ul>
+
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+
+          <h3>Services</h3>
+
+          <ul>
+            <li><a href="https://sidsplumbing.ie/services/24-hour-emergency-plumbing/">Emergency Plumbing</a></li>
+            <li><a href="https://sidsplumbing.ie/services/heating-services-dublin/">Heating Services</a></li>
+            <li><a href="https://sidsplumbing.ie/services/plumbing-services-dublin/">Plumbing Services Dublin</a></li>
+            <li><a href="https://sidsplumbing.ie/services/boiler-installation/">Boiler Installation</a></li>
+            <li><a href="https://sidsplumbing.ie/services/leak-detection/">Leak Detection</a></li>
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+<!--SVGs  <article class="SVGs">
+
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <symbol id="02_insulation" viewBox="-45 56 100 100">
+      <path d="m48 328h16v16h-16zm0 0" />
+        </symbol>
+  </svg>
+
+</article>
+  -->

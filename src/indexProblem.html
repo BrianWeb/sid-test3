@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!--Font Awesome-->
+  <script src="https://use.fontawesome.com/1f51e29b01.js"></script>
+  <!--- <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">-->
+
+  <title>Sid's Plumbing</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+
+  <div class="container-fluid">
+
+    <div id="top_section">
+
+      <div class="row align-items-start ">
+
+        <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-4" id="logoCol">
+          <a href="home">
+            <div id="logo">
+              <!--<img src="..\assets\images\logo_with_company_name.jpg" id="logoWithCompanyName">-->
+              <img src="..\assets\images\logo.jpg" id="logoImage">
+
+              <div id="company_name">
+                Sid's Plumbing
+              </div>
+              <div id="company_name_sub_text">
+                Plumbing &amp; Heating Services
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-8 ">
+
+          <div class="row">
+
+            <div class="col-12 col-sm-12 col-md-8 col-lg-9 col-xl-9  contactCol customMargin">
+              <a href="callto:00353866049361 ">
+                <span>
+                  <i class="fa fa-phone" aria-hidden="true"></i>&nbsp;
+                  <!--<span id="callUsColText">Call us 24/7 </span>-->
+                  <span class="contactText"> 086&nbsp;604&nbsp;9361</span>
+                </span>
+              </a>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 customMargin contactCol ">
+              <!-- <a href="callto:00353866049361">
+              <span>
+                <i class="fa fa-mobile fa-2x" aria-hidden="true"></i>&nbsp;
+                <span class="contactText">086&nbsp;6049361</span>
+              </span>-->
+              <a href="https://wa.me/353866049361?text=Plumbing%Enquiry">
+                <span id="whatsapp">
+                  <i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i>&nbsp;
+                  <span class="contactText"> WhatsApp chat</span>
+                </span>
+              </a>
+            </div>
+
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-10  offset-xl-2 contactCol customMargin">
+              <a href="mailto:sidsplumbing@gmail.com">
+                <span>
+                  <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
+                  <span class="contactText">
+                    <!--<span [innerHTML]="emailAddress"></span>-->
+                    <span>sidsplumbing@gmail.com</span>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div><!--/top_section-->
+
+    </div><!--/<div id="top_section container-fluid">-->
+    <!-- The navigation menu -->
+    <div class="row">
+
+      <div class="scrollmenu">
+        <!--Products-->
+        <!--<a data-toggle="collapse" href="#collapsibleProjectsDiv" aria-expanded="false" aria-controls="collapsibleProjectsDiv">-->
+
+        <a>
+          Home
+        </a>
+
+        <a>
+          Services
+          <!--<i id="productsChevron" class="fa fa-lg fa-chevron-down pull-right" aria-hidden="true"></i>-->
+          <!--Glyphs not longer supported in BS4<span id="projectsMoreLessTriangle" class="glyphicon glyphicon-menu-down" aria-hidden="false"></span>-->
+        </a>
+        <!-- </a>-->
+
+        <a>
+          Rates
+          <!--<span id="productsMoreLessTriangle" class="glyphicon glyphicon-menu-down pull-right" aria-hidden="true"></span>-->
+        </a>
+
+        <a>
+          Areas
+        </a>
+        <!--<span id="productsMoreLessTriangle" class="glyphicon glyphicon-menu-down pull-right" aria-hidden="true"></span>-->
+
+        <a>
+          FAQ
+        </a>
+
+        <a>
+          About
+          <!--<span id="productsMoreLessTriangle" class="glyphicon glyphicon-menu-down pull-right" aria-hidden="true"></span>-->
+        </a>
+
+        <a>
+          Contact
+          <!--<span id="productsMoreLessTriangle" class="glyphicon glyphicon-menu-down pull-right" aria-hidden="true"></span>-->
+        </a>
+
+
+      </div><!--/navbar row-->
+    </div> <!--Container-fluid-->
+    <!-- /*Overlay NAV BAR-->
+    <div id="myNav" class="overlay">
+
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Areas</a>
+        <a href="#">FAQ</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+
+    </div>
+
+    <div class="row contactCol" id="burgerBar">
+      <span onclick="openNav()">&#9776; Menu</span>
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.display = "block";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.display = "none";
+      }
+    </script>
+
+
+
+
+
+    <div id="homePageJumbotron" class="row">
+      <div class="container">
+        <div class="row justify-content-center">
+          <!--<div class="row ">
+            <div id="carousel-images">
+              <a href="mailto:sidsplumbing@gmail.com">
+
+                <img src="..\assets\images\homepage.jpg">
+                <div class="carousel-caption">
+
+                  <div id="adSubMessage">
+                    Contact our Friendly Team of
+                  </div>
+                  <div id="adMainMessage">
+                    Plumbing Professionals
+                  </div>
+                  <div id="homepageImageBulletPoints">
+                    <div><i class="fa fa-check" aria-hidden="true"></i> 24 Hour Emergency Service</div>
+                    <div><i class="fa fa-check" aria-hidden="true"></i> Upfront, Flat Rate Pricing</div>
+                    <div><i class="fa fa-check" aria-hidden="true"></i> Courteous, Uniformed Professionals</div>
+                    <div><i class="fa fa-check" aria-hidden="true"></i> Serving all of Dublin</div>
+                  </div>
+                </div>
+                <div id="adFooterMessage">
+                  Contact us >
+                </div>
+
+              </a>
+            </div>
+
+          </div>-->
+          <div class="col-12 col-sm-12 col-md-8 col-lg-7 col-xl-7">
+            <div id="homePageJumbotronText">
+              <div id="adSubMessage">
+                Contact our Friendly Team of
+              </div>
+              <div id="adMainMessage">
+                Plumbing Professionals
+              </div>
+              <div id="jumbotronBulletPoints">
+                <div><i class="fa fa-check" aria-hidden="true"> </i> 24 Hour Emergency Service</div>
+                <div><i class="fa fa-check" aria-hidden="true"> </i> Upfront, Flat Rate Pricing</div>
+                <div><i class="fa fa-check" aria-hidden="true"> </i> Courteous, Uniformed &nbsp;Professionals</div>
+                <div><i class="fa fa-check" aria-hidden="true"> </i> Serving all of Dublin</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-4 col-lg-5 col-xl-5 ">
+            <img src="..\assets\images\sid_no_background_small.png" id="sidNoBackgroundSmall">
+          </div>
+
+
+        </div><!-- /homePageJumbotron-->
+      </div>
+    </div>
+
+    <!---Welcome text & Contact form-->
+    <article id="welcomeAndContactForm" class="row">
+      <div class="container">
+        <div class="row justify-content-center">
+
+          <div class="col-12   col-sm-12   col-md-7   col-lg-6  col-xl-6">
+            <h2>Emergency Plumber Dublin</h2>
+            <div id="welcomeText">
+              <p>
+                Emergency Plumber Dublin - We provide top class repairs and installations carried out by our fully qualified plumbers and all our work is fully guaranteed giving you above all complete peace of mind. Leaks including drips and bursts can happen at any time and the damage caused can be devastating, that is why our Dublin Plumbers provide a fast & efficient emergency plumber service 24 hours a day, 7 days a week.
+              </p>
+              <p>
+                We are a trusted family plumber, these services are convenient, friendly, and affordable, Don’t hesitate and call our friendly Emergency Plumber Dublin is always on ready to handle any emergencies 24/7. Our prompt fixing of any disrepair on your plumbing system can save you a lot of money and heartache. Furthermore, our emergency plumbing services are structured to offer lasting solutions for urgent plumbing needs.
+              </p>
+              <p>
+                By working with us, you receive the ultimate set of benefits and some of the best features on the market. Since we have more than 40 years of experience in the industry, you can rest assured that we have the expertise needed to help you with this. All you have to do is to get in touch with our team and we will be here to help. Our focus is on bringing the very best plumbing service in Dublin, so just consider working with us and we will be here to help at all times. Avail this great opportunity and work with a team of experts in the industry! Sid’s Plumbing Plumbers
+              </p>
+            </div>
+          </div>
+
+          <div id="quoteForm" class="col-12   col-sm-12   col-md-4 offset-md-1   col-lg-5 offset-lg-1   col-xl-5 offset-xl-1">
+            <form>
+              <h2>Request a Quote</h2>
+              <p>
+                Get free estimates and quotations – Simply submit your job information in the form below. A member of our team will be in touch with you with quotes back for the required services.
+              </p>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Full Name *</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Email Address *</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Phone Number *</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Tell us your requirements</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div><!---/ Welcome text & Contact form-->
+    </article><!--/ <div class="container-fluid">-->
+
+    <article id="productIconsAndTitleContainer" class="centerText">
+      <div class="container">
+
+        <div class="articleTitle">
+          <h2>Services</h2>
+        </div>
+
+        <div class="row justify-content-center">
+
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 centerText">
+            <a>
+              <div class="productSvgAndHeader">
+                <div class="productSvg ">
+                  <img src="..\assets\images\services\tap.png" class="serviceImage">
+                  <!--<svg><use xlink:href="#01_plywood_plt"></use></svg>-->
+                </div>
+                <div class="productHeading centerText">
+                  24 Hour Emergency Plumbing
+                </div>
+                <div class="serivceDescription">
+                  Need an Emergency Plumber in Dublin? Our emergency plumber services team is always on standby to receive inquiries calls 24/7 our customer service team is cordial, attentive, organized and swift.
+                </div>
+              </div>
+            </a>
+          </div><!--/col-->
+
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 centerText">
+            <a>
+              <div class="productSvgAndHeader">
+                <div class="productSvg ">
+                  <img src="..\assets\images\services\tap.png" class="serviceImage">
+                  <!--<svg><use xlink:href="#01_plywood_plt"></use></svg>-->
+                </div>
+                <div class="productHeading centerText">
+                  Plumbing Services Dublin
+                </div>
+                <div class="serivceDescription">
+                  Get Over 40 Years Plumbing Experience. Our services include a full range of Plumbing and Heating services in North Dublin which we have been providing for over 40 years.
+                </div>
+              </div>
+            </a>
+          </div><!--/col-->
+
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 centerText">
+            <a>
+              <div class="productSvgAndHeader">
+                <div class="productSvg ">
+                  <img src="..\assets\images\services\boiler.png" class="serviceImage">
+                  <!--<svg><use xlink:href="#01_plywood_plt"></use></svg>-->
+                </div>
+                <div class="productHeading centerText">
+                  Boiler Installation
+                </div>
+                <div class="serivceDescription">
+                  Boiler Installation. All our gas and oil boilers are A rated. We will give you our expert advice on the best brands to choose.
+                </div>
+              </div>
+            </a>
+          </div><!--/col-->
+
+
+
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 centerText">
+            <a>
+              <div class="productSvgAndHeader">
+                <div class="productSvg ">
+                  <img src="..\assets\images\services\boiler.png" class="serviceImage">
+                  <!--<svg><use xlink:href="#01_plywood_plt"></use></svg>-->
+                </div>
+                <div class="productHeading centerText">
+                  Heating Services
+                </div>
+                <div class="serivceDescription">
+                  Sid’s Plumbing and Heating is a Registered SEAI Contractor which means that we are a Fully Insured and Our Customers can Avail of all Goverment Grants that are available at any time.
+                </div>
+              </div>
+            </a>
+          </div><!--/col-->
+
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 centerText">
+            <a>
+              <div class="productSvgAndHeader">
+                <div class="productSvg ">
+                  <img src="..\assets\images\services\tap.png" class="serviceImage">
+                  <!--<svg><use xlink:href="#01_plywood_plt"></use></svg>-->
+                </div>
+                <div class="productHeading centerText">
+                  Leak Detection Dublin
+                </div>
+                <div class="serivceDescription">
+                  Need an Emergency Plumber in Dublin? Our emergency plumber services team is always on standby to receive inquiries calls 24/7 our customer service team is cordial, attentive, organized and swift.
+                </div>
+              </div>
+            </a>
+          </div><!--/col-->
+
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 centerText">
+            <a>
+              <div class="productSvgAndHeader" id="miscServices">
+                <div class="productSvg ">
+                  <!--<svg><use xlink:href="#01_plywood_plt"></use></svg>-->
+                  <img src="..\assets\images\services\tap.png" class="serviceImage">
+                </div>
+                <div class="productHeading centerText">
+                  Including:
+                </div>
+                <div class="serivceDescription">
+                  <div id="servicesBulletPoints">
+                    <ul>
+                      <li><div><i class="fa fa-check" aria-hidden="true"> </i>  Kitchen Drain Unblocking</div></li>
+                      <li><div><i class="fa fa-check" aria-hidden="true"> </i>  Toilets Not Filling Or Flushing</div></li>
+                      <li><div><i class="fa fa-check" aria-hidden="true"> </i> Under Sink Water Heater Installation</div></li>
+                      <li><div><i class="fa fa-check" aria-hidden="true"> </i> Airlocks Unblocked</div></li>
+                      <li><div><i class="fa fa-check" aria-hidden="true"> </i> Gas Line Repair/Replacement</div></li>
+                    </ul>
+
+
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div><!--/col-->
+        </div><!--/Row-->
+
+      </div><!--/Container-->
+    </article>
+
+
+
+
+    <article id="referrals">
+
+
+      <section>
+        <div class="container">
+          <h2 class="text-center articleTitle">What Our Clients Say</h2>
+
+          <div class="card col-md-12 mt-2">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="100000">
+              <div class="w-100 carousel-inner mb-4" role="listbox">
+
+                <div class="carousel-item active">
+
+                  <div class="row">
+
+                    <div class="col-md-6 col-12">
+                      <div class="carousel-caption">
+                        <div class="align-items-start">
+                          <p>"Sid was very fast and efficient. We are happy with the job done as our issues where all solved."</p>
+                          <div><h3>Jacinta Cummins</h3></div>
+                          <div>Finglas</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-12">
+                      <div class="carousel-caption">
+                        <div class="align-items-start">
+                          <p>"I found Sidney very efficent. The job was done within two days to my complete satisfaction. Thank you."</p>
+                          <div><h3>Frank Murphy</h3></div>
+                          <div>Dublin</div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+
+                  <div class="row">
+
+                    <div class="col-md-6 col-12">
+                      <div class="carousel-caption">
+                        <div class="align-items-start">
+                          <p>"Thank you so much Sid for sorting out our heating problems. I will definitely be recommending you to friends and family. Super job!"</p>
+                          <div><h3>Carol Sheridan</h3></div>
+                          <div>Dublin</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-12">
+                      <div class="carousel-caption">
+
+                        <div class="align-items-start">
+                          <p>"Very satisfied with the work done. Flexible, professional and friendly."</p>
+                          <div><h3>Greg Stevenson</h3></div>
+                          <div>Portobello</div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+              <a class="carousel-control-prev  text-decoration-none" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fa fa-chevron-left"></i></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next  text-decoration-none" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa fa-chevron-right"></i></span>
+                <span class="sr-only">Next</span>
+              </a>
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </article>
+
+
+    <article id="callUsBanner" class="centerText">
+      <div>
+        <p>If you have any emergency plumbing need, simply call our 24 hour emergency plumbing</p>
+        <p class="em1-2">Quick and Reliable Repair of Emergency leaks & Burst Pipes</p>
+        <p class="em1-4"> 086 604 9361</p>
+      </div>
+    </article>
+
+    <article>
+      <div class="container">
+        <!--/ Contains the size of the map-->
+
+        <div class="articleTitle text-center" id="findUs">
+          <h2>Find Us</h2>
+        </div>
+
+
+        <div class="googleMap">
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2376.1273073245507!2d-6.239195748850497!3d53.448310479902325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48671233aa868d7d%3A0xff101b0a845c0334!2sSids%20Plumbing%20Swords%20Dublin!5e0!3m2!1sen!2sie!4v1603025361989!5m2!1sen!2sie" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+        </div>
+      </div>
+
+    </article>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+  <!--SVGs  <article class="SVGs">
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <symbol id="02_insulation" viewBox="-45 56 100 100">
+        <path d="m48 328h16v16h-16zm0 0" />
+          </symbol>
+    </svg>
+
+  </article>
+    -->
+  <app-root></app-root>
+</body>
+</html>

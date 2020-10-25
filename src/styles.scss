@@ -1,0 +1,950 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  background-color: #f5f5f5;
+}
+
+.noPadding {
+  padding: 0px;
+}
+
+a {
+  color: #006199
+}
+a:link {
+  text-decoration: none;
+  color: #006199;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #006199;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #00ccff;
+}
+
+a:active {
+  text-decoration: none;
+  color: #006199;
+}
+
+a:focus {
+  text-decoration: none;
+  color: #006199;
+}
+
+
+
+i:link {
+  text-decoration: none;
+}
+
+i:visited {
+  text-decoration: none;
+}
+
+i:hover {
+  text-decoration: none;
+}
+
+i:active {
+  text-decoration: none;
+}
+
+ul {
+  list-style-position: outside;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+h2 {
+  color: #4c6b90;
+  padding-bottom: 20px;
+}
+
+
+
+h3 {
+  color: #006199;
+  font-size: 1.3em;
+}
+
+figure {
+  padding-bottom: 20px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.article-lg {
+  // background-color: whitesmoke;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  // border-top: 1px solid #ccc;
+}
+
+.article-sm {
+  // background-color: whitesmoke;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  // border-top: 1px solid #ccc;
+}
+
+
+.articleTitle {
+  padding-bottom: 20px;
+}
+
+.margin-top {
+  padding-top: 30px;
+}
+
+.customContainer {
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.justifyText {
+  text-align: justify;
+}
+
+@media only screen and (min-width:992px) {
+  .customContainer {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+}
+
+
+
+@media only screen and (min-width:1200px) {
+  .customContainer {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}
+
+@media only screen and (min-width:1400px) {
+  .customContainer {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+}
+
+.em1-2 {
+  font-size: 1.2em;
+}
+
+.em1-4 {
+  font-size: 1.4em;
+}
+
+
+//COLOURS
+//FONTS:
+@font-face {
+  font-family: evogria;
+  src: url(fonts/evogria.otf);
+}
+
+@font-face {
+  font-family: velocista;
+  src: url(fonts/velocista.ttf);
+}
+
+@font-face {
+  font-family: upbolters;
+  src: url(fonts/upbolters.otf);
+}
+
+
+@font-face {
+  font-family: 'segoe-ui';
+  src: url('fonts/segoe-ui.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'segoe-ui-light';
+  src: url('fonts/segoe-ui-light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'roboto-condensed-light';
+  src: url('fonts/roboto-condensed-light.ttf') format('truetype');
+}
+
+
+
+#top_section {
+    background-color: white;
+}
+
+
+@media only screen and (max-width:768px) {
+  #logoCol {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+#logoImage {
+  max-width: 56px;
+  padding-top: 10px;
+  padding-right: 5px;
+  float: left;
+}
+
+#logoWithCompanyName {
+  max-width: 340px;
+  padding-top: 10px;
+  padding-right: 5px;
+  float: left;
+}
+
+#company_name {
+  font-family: upbolters;
+  font-size: 2.5em;
+  // color: #003d99;
+  color: #002d64;
+}
+
+#company_name_sub_text {
+  font-size: 1.3em;
+  //color: #008020; nice green
+  color: #006ba1;
+  margin-top: -10px;
+}
+
+#sidNoBackgroundSmall {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --- Icons */
+
+
+/*-----------Contact Columns-------------------*/
+
+.contactCol {
+  line-height: 45px;
+  font-size: 1.1em;
+  /*nice orange background-color: #E62E00;*/
+  //display: flex;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+@media only screen and (min-width:767px) {
+  .contactCol {
+    text-align: right;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .contactCol {
+    background-color: lightgray;
+  }
+}
+/*
+.callUsCol {
+  line-height: 50px;
+  font-size: 1.1em;
+  /*nice orange background-color: #E62E00;
+  //display: flex;
+  text-align: center;
+  // color: #f05118;
+  color: #4c6b90;
+  font-weight: 600;
+}
+
+
+
+@media only screen and (min-width:768px) {
+  .callUsCol {
+    text-align: right;
+  }
+}
+*/
+#callUsColText {
+  display: inline-block;
+  color: #4c6b90;
+  padding-right: 10px;
+}
+
+@media only screen and (min-width:770px) and (max-width:870px) {
+  #callUsColText {
+    display: none;
+  }
+}
+
+
+
+
+@media only screen and (max-width:768px) {
+
+  .customMargin {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+}
+
+
+
+
+.contactCol,
+.contactCol a,
+.contactCol a:link,
+.contactCol a:active,
+.contactCol a:hover,
+.contactCol a:visited {
+  text-decoration: none;
+  //color: #006ba1;
+  color: #006ba1;
+}
+
+#whatsapp {
+  color: #00b33c;
+}
+
+.menuLevel2:hover,
+.menuLevel2:link,
+.menuLevel2:active,
+.menuLevel2:hover,
+.menuLevel2:visited {
+  background-color: #C2CEDA;
+}
+
+
+@media only screen and (max-width:767px) {
+  .contactCol {
+    margin-top: 2px;
+    background-color: #E8ECF1;
+  }
+  /*
+    #contactCol1 {
+        border-bottom: 4px solid white;
+        border-left: 4px solid white;
+        border-right: 2px solid white;
+    }
+    #contactCol2 {
+        border-bottom: 4px solid white;
+        border-right: 4px solid white;
+        border-left: 2px solid white;
+    }*/
+}
+
+
+
+.contactCol:hover {
+  transition: .3s background-color;
+  color: #006747;
+}
+
+/*
+.contactText {
+  font-weight: 600;
+  font-size: 1.1em;
+}*/
+
+
+.contactText,
+.keyHeader,
+#burgerBar {
+  font-family: roboto-condensed-light, Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+}
+
+@media only screen and (max-width:200px) {
+  .contactText,
+  .thumbnailDescription {
+    display: none;
+  }
+  /*.col-xs-1 .col-xs-2 .col-xs-3 .col-xs-4 .col-xs-5 .col-xs-6 .col-xs-7 .col-xs-8 .col-xs-9 .col-xs-10 .col-xs-11 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }*/
+}
+
+.icon_sosa {
+  vertical-align: middle;
+  font-size: 2.2em;
+}
+/*-----------/Contact Columns-------------------*/
+
+
+/*----------Standard Horizontal NAV BAR -------------*/
+
+
+
+
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+  text-justify: inter-word;
+  background-color: #006199;
+  padding-top: .3em;
+  font-family: roboto-condensed-light, Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+}
+
+div.scrollmenu a {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  font-size: 2em;
+  color: white;
+  padding-left: 3%;
+  padding-right: 3%;
+  border-bottom: .2em solid transparent;
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+  div.scrollmenu a {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width:992px) and (max-width:1200px) {
+  div.scrollmenu a {
+    font-size: 1.6em;
+  }
+}
+
+
+div.scrollmenu a:hover, a:focus, a:active, a:target {
+  border-bottom: .1em solid #00aaff;
+}
+/*
+div.scrollmenu a:active,
+div.scrollmenu a:hover {
+  color: whitesmoke;
+}
+
+  div.scrollmenu a:link,
+div.scrollmenu a:visited {
+  color: white;
+}
+  */
+
+
+
+/* border under links on hover */
+
+/*-------/Nav Bar-----------*/
+
+
+
+
+#sidNoBackgroundSmall {
+  max-width: 300px
+}
+
+
+
+
+/*Overlay NAV BAR*/
+
+
+@media only screen and (min-width:778px) {
+  #burgerBar {
+    display: none;
+  }
+}
+
+#burgerBar {
+  padding-left: 15px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #006199;
+  font-size: 26px;
+  cursor: pointer;
+  color: white;
+}
+
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #006199;
+}
+
+.overlay-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #b3e6ff;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+#homePage {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+/*   Jumbotron   */
+#homePageJumbotron {
+  background-color: #007abf;
+  color: white;
+  padding-top: 15px;
+}
+
+#homePageJumbotronText {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 540px) {
+  #homePageJumbotronText {
+    padding-left: 20px;
+  }
+}
+
+
+#adMainMessage {
+  font-size: 3em;
+  font-weight: 600;
+  line-height: 1.2em;
+  text-align: left; /*bootstrap override*/
+}
+
+@media only screen and (max-width: 479px) {
+
+  #adMainMessage {
+    font-size: 2.6em;
+    font-weight: 600;
+    line-height: 1.2em;
+    //text-align: right; /*bootstrap override*/
+  }
+
+  //   #adFooterMessage, #adSubMessage {
+  //   display: none;
+  //}
+}
+
+
+
+#adSubMessage {
+  font-size: 1.8em;
+  text-align: left; /*bootstrap override*/
+}
+
+
+
+#jumbotronBulletPoints {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.fa-check {
+  padding-right: 8px;
+}
+
+
+@media only screen and (min-width: 480px) {
+
+  #jumbotronBulletPoints {
+    font-size: 1.2em;
+  }
+}
+
+/*----/Jumbotron */
+
+#routerContainer {
+}
+
+#welcomeAndContactForm {
+  background-color: #f5f5f5;
+}
+
+#welcomeText {
+  text-align: justify;
+  padding-bottom:20px;
+}
+
+
+
+/*--- Quote Form*/
+
+#quoteForm {
+  border: 1px solid #ced4da;
+  background-color: white;
+  padding-top:20px;
+}
+/*--- /Quote Form*/
+
+
+/*--Services*/
+
+serviceImage {
+  background-color: white;
+}
+/* ---- PRODUCT ICONS ------ */
+
+
+#referrals {
+  padding-bottom: 80px;
+}
+/*Services Icons*/
+
+#servicesPageHeader {
+  background-color: white;
+}
+
+#productIconsAndTitleContainer {
+  background-color: white;
+}
+
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+
+
+@media only screen and (min-width:576px) {
+  #productIconsAndTitleContainer {
+  }
+}
+
+#productIconsRow {
+}
+
+
+.productSvgAndHeader, .viewAllProductsLink {
+  //background-color: #499933;
+  //color: white;
+  color: #4c6b90;
+  margin-top: 1.1em;
+  margin-bottom: 1.1em;
+  padding-top: 1em;
+  padding-bottom: 1.2em;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.viewAllProductsLink a {
+  color: white; /*Boostrap override*/
+}
+//
+//.productSvgAndHeader a:hover, .viewAllProductsLink a:hover {
+  //color: purple; /*Boostrap override*/
+  //background-color:red;
+//}
+
+.anchorCol:hover {
+  //.serviceImage{color:yellow;} this is an image so can't change color. Maybe when it's an SVG u might want to change its color
+  .productHeading {
+    color: #007abf;
+  }
+  border-bottom: 2px solid #007abf;
+}
+
+
+@media only screen and (min-width:768px) and (max-width:992px) {
+  .productSvgAndHeader {
+    //height: 302px; /*at this view point 'Panel Products' and 'Timber Products' are taller than 'Insulation' and 'Joists' because they have two words. This makes them all the same height*/
+  }
+}
+
+svg {
+  width: 100%;
+}
+
+.productSvg {
+  padding-top: 1.5em;
+  fill: #fff;
+  background-color: white;
+}
+
+.st0 {
+  fill: none;
+  stroke: white;
+  stroke-miterlimit: 10;
+}
+
+.productHeading {
+  padding: .5em;
+  // font-size: 1.4em;
+  font-size: 1.1em;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.serivceDescription {
+  color: #212529;
+  text-align: justify;
+}
+
+
+#servicesBulletPoints {
+  padding-bottom: 10px;
+}
+
+
+#servicesBulletPoints .fa-check {
+  color: #006ba1;
+}
+/* ----/Services -----*/
+#callUsBanner {
+  background-color: #007abf;
+  color: white;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+/*------ Google Map*/
+#findUs {
+  padding-bottom: 20px;
+}
+
+.googleMap {
+  max-width: 100%;
+  position: relative;
+  padding-bottom: 50%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+}
+
+.googleMap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+/* ----- /Google Map*/
+/* ---- Referrals ------*/
+#referrals {
+  background-color: #f5f5f5;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.card {
+  margin: 0 auto;
+  border: none;
+  background-color: #f5f5f5;
+}
+
+.card .carousel-item {
+  min-height: 190px;
+}
+
+.card .carousel-caption {
+  right: 15px;
+  left: 15px;
+  top: 15px;
+  color: #3d3d3d;
+  border: 1px solid #4c6b90;
+  background-color: white;
+  min-height: 160px;
+  padding: 15px;
+  text-align: left;
+}
+
+.card .carousel-caption .col-sm-3 {
+  display: flex;
+  align-items: center;
+}
+
+
+.card .carousel-control-prev, .card .carousel-control-next {
+  color: #3d3d3d !important;
+  opacity: 1 !important;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-image: none;
+  color: #fff;
+  font-size: 14px;
+  background-color: #006199;
+  height: 32px;
+  line-height: 32px;
+  width: 32px;
+  text-decoration: none;
+}
+
+.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
+  opacity: 0.85;
+}
+
+.carousel-control-prev {
+  left: 40%;
+  top: 110%;
+}
+
+.carousel-control-next {
+  right: 40%;
+  top: 110%;
+}
+
+
+.carousel-caption h2 {
+  font-size: 14px;
+}
+
+.carousel-caption h2 span {
+  color: #cd3a54;
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .carousel-caption {
+    position: relative;
+  }
+
+  .card .carousel-caption {
+    left: 0;
+    top: 0;
+    margin-bottom: 15px;
+  }
+
+  .card .carousel-caption img {
+    margin: 0 auto;
+  }
+
+  .carousel-control-prev {
+    left: 35%;
+    top: 105%;
+  }
+
+  .carousel-control-next {
+    right: 35%;
+    top: 105%;
+  }
+
+  .card .carousel-caption h3 {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .carousel-caption {
+    position: relative;
+  }
+
+  .card .carousel-caption {
+    left: 0;
+    top: 0;
+    margin-bottom: 15px;
+  }
+
+  .card .carousel-caption img {
+    margin: 0 auto;
+  }
+
+
+  .carousel-control-prev {
+    left: 35%;
+    top: 105%;
+  }
+
+  .carousel-control-next {
+    right: 35%;
+    top: 105%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+  .card .carousel-caption h3 {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
+
+a {
+  text-decoration: none
+}
+/* /Referrals */
+
+
+#commonFooter {
+  background-color: #31404e;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #e6f7ff;
+
+  h3 {
+    color: white;
+  }
+
+  a {
+    color: #e6f7ff;
+  }
+
+  a:hover {
+    color: #00aaff;
+  }
+}
