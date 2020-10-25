@@ -76,6 +76,7 @@ h3 {
 }
 
 figure {
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -150,7 +151,26 @@ img {
   font-size: 1.4em;
 }
 
+.googleReviewStars .fa-star {
+  padding-right: 5px;
+  color: #ffcc00;
+}
 
+/*
+.googleReviewStars .fa-star:last-of-type {
+  padding-right: 10px;
+
+}*/
+
+.googleReviewStars {
+  a {
+    color: #e6ffff;
+  }
+
+  a:hover {
+    color: #00ccff;
+  }
+}
 //COLOURS
 //FONTS:
 @font-face {
@@ -389,48 +409,51 @@ img {
 
 /*----------Standard Horizontal NAV BAR -------------*/
 
-
-
-
-div.scrollmenu {
-  overflow: auto;
-  white-space: nowrap;
-  width: 100%;
-  text-align: center;
-  text-justify: inter-word;
-  background-color: #006199;
-  padding-top: .3em;
-  font-family: roboto-condensed-light, Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
-}
-
-div.scrollmenu a {
-  text-decoration: none;
-  display: inline-block;
-  text-align: center;
-  font-size: 2em;
-  color: white;
-  padding-left: 3%;
-  padding-right: 3%;
-  border-bottom: .2em solid transparent;
-}
-
-@media only screen and (min-width:768px) and (max-width:991px) {
-  div.scrollmenu a {
-    font-size: 1.3em;
+@media only screen and (max-width:768px) {
+  div.scrollmenu {
+    display: none;
   }
 }
 
-@media only screen and (min-width:992px) and (max-width:1200px) {
-  div.scrollmenu a {
-    font-size: 1.6em;
+  div.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+    text-justify: inter-word;
+    background-color: #006199;
+    padding-top: .3em;
+    font-family: roboto-condensed-light, Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
   }
-}
+
+  div.scrollmenu a {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-bottom: .2em solid transparent;
+  }
+
+  @media only screen and (min-width:768px) and (max-width:991px) {
+    div.scrollmenu a {
+      font-size: 1.3em;
+    }
+  }
+
+  @media only screen and (min-width:992px) and (max-width:1200px) {
+    div.scrollmenu a {
+      font-size: 1.6em;
+    }
+  }
 
 
-div.scrollmenu a:hover, a:focus, a:active, a:target {
-  border-bottom: .1em solid #00aaff;
-}
-/*
+  div.scrollmenu a:hover, a:focus, a:active, a:target {
+    border-bottom: .1em solid #00aaff;
+  }
+  /*
 div.scrollmenu a:active,
 div.scrollmenu a:hover {
   color: whitesmoke;
@@ -444,507 +467,516 @@ div.scrollmenu a:visited {
 
 
 
-/* border under links on hover */
+  /* border under links on hover */
 
-/*-------/Nav Bar-----------*/
-
-
-
-
-#sidNoBackgroundSmall {
-  max-width: 300px
-}
+  /*-------/Nav Bar-----------*/
 
 
 
 
-/*Overlay NAV BAR*/
+  #sidNoBackgroundSmall {
+    max-width: 300px
+  }
 
 
-@media only screen and (min-width:778px) {
+
+
+  /*Overlay NAV BAR*/
+
+
+  @media only screen and (min-width:778px) {
+    #burgerBar {
+      display: none;
+    }
+  }
+
   #burgerBar {
-    display: none;
-  }
-}
-
-#burgerBar {
-  padding-left: 15px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  background-color: #006199;
-  font-size: 26px;
-  cursor: pointer;
-  color: white;
-}
-
-
-.overlay {
-  height: 100%;
-  width: 100%;
-  display: none;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #006199;
-}
-
-.overlay-content {
-  position: relative;
-  top: 15%;
-  width: 100%;
-  text-align: center;
-  margin-top: 5px;
-}
-
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #f1f1f1;
-  display: block;
-  transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
-  color: #b3e6ff;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 10px;
-  right: 30px;
-  font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay a {
-    font-size: 20px
-  }
-
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-}
-
-
-#homePage {
-  margin-left: 0px;
-  margin-right: 0px;
-}
-/*   Jumbotron   */
-#homePageJumbotron {
-  background-color: #007abf;
-  color: white;
-  padding-top: 15px;
-}
-
-#homePageJumbotronText {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-@media only screen and (max-width: 540px) {
-  #homePageJumbotronText {
-    padding-left: 20px;
-  }
-}
-
-
-#adMainMessage {
-  font-size: 3em;
-  font-weight: 600;
-  line-height: 1.2em;
-  text-align: left; /*bootstrap override*/
-}
-
-@media only screen and (max-width: 479px) {
-
-  #adMainMessage {
-    font-size: 2.6em;
-    font-weight: 600;
-    line-height: 1.2em;
-    //text-align: right; /*bootstrap override*/
-  }
-
-  //   #adFooterMessage, #adSubMessage {
-  //   display: none;
-  //}
-}
-
-
-
-#adSubMessage {
-  font-size: 1.8em;
-  text-align: left; /*bootstrap override*/
-}
-
-
-
-#jumbotronBulletPoints {
-  padding-top: 15px;
-  padding-bottom: 10px;
-  text-align: left;
-}
-
-.fa-check {
-  padding-right: 8px;
-}
-
-
-@media only screen and (min-width: 480px) {
-
-  #jumbotronBulletPoints {
-    font-size: 1.2em;
-  }
-}
-
-/*----/Jumbotron */
-
-#routerContainer {
-}
-
-#welcomeAndContactForm {
-  background-color: #f5f5f5;
-}
-
-#welcomeText {
-  text-align: justify;
-  padding-bottom:20px;
-}
-
-
-
-/*--- Quote Form*/
-
-#quoteForm {
-  border: 1px solid #ced4da;
-  background-color: white;
-  padding-top:20px;
-}
-/*--- /Quote Form*/
-
-
-/*--Services*/
-
-serviceImage {
-  background-color: white;
-}
-/* ---- PRODUCT ICONS ------ */
-
-
-#referrals {
-  padding-bottom: 80px;
-}
-/*Services Icons*/
-
-#servicesPageHeader {
-  background-color: white;
-}
-
-#productIconsAndTitleContainer {
-  background-color: white;
-}
-
-
-a:link {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-a:active {
-  text-decoration: none;
-}
-
-a:focus {
-  text-decoration: none;
-}
-
-
-
-@media only screen and (min-width:576px) {
-  #productIconsAndTitleContainer {
-  }
-}
-
-#productIconsRow {
-}
-
-
-.productSvgAndHeader, .viewAllProductsLink {
-  //background-color: #499933;
-  //color: white;
-  color: #4c6b90;
-  margin-top: 1.1em;
-  margin-bottom: 1.1em;
-  padding-top: 1em;
-  padding-bottom: 1.2em;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.viewAllProductsLink a {
-  color: white; /*Boostrap override*/
-}
-//
-//.productSvgAndHeader a:hover, .viewAllProductsLink a:hover {
-  //color: purple; /*Boostrap override*/
-  //background-color:red;
-//}
-
-.anchorCol:hover {
-  //.serviceImage{color:yellow;} this is an image so can't change color. Maybe when it's an SVG u might want to change its color
-  .productHeading {
-    color: #007abf;
-  }
-  border-bottom: 2px solid #007abf;
-}
-
-
-@media only screen and (min-width:768px) and (max-width:992px) {
-  .productSvgAndHeader {
-    //height: 302px; /*at this view point 'Panel Products' and 'Timber Products' are taller than 'Insulation' and 'Joists' because they have two words. This makes them all the same height*/
-  }
-}
-
-svg {
-  width: 100%;
-}
-
-.productSvg {
-  padding-top: 1.5em;
-  fill: #fff;
-  background-color: white;
-}
-
-.st0 {
-  fill: none;
-  stroke: white;
-  stroke-miterlimit: 10;
-}
-
-.productHeading {
-  padding: .5em;
-  // font-size: 1.4em;
-  font-size: 1.1em;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-
-.serivceDescription {
-  color: #212529;
-  text-align: justify;
-}
-
-
-#servicesBulletPoints {
-  padding-bottom: 10px;
-}
-
-
-#servicesBulletPoints .fa-check {
-  color: #006ba1;
-}
-/* ----/Services -----*/
-#callUsBanner {
-  background-color: #007abf;
-  color: white;
-  margin-left: -15px;
-  margin-right: -15px;
-}
-/*------ Google Map*/
-#findUs {
-  padding-bottom: 20px;
-}
-
-.googleMap {
-  max-width: 100%;
-  position: relative;
-  padding-bottom: 50%; // This is the aspect ratio
-  height: 0;
-  overflow: hidden;
-}
-
-.googleMap iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100% !important;
-  height: 100% !important;
-}
-/* ----- /Google Map*/
-/* ---- Referrals ------*/
-#referrals {
-  background-color: #f5f5f5;
-  margin-left: -15px;
-  margin-right: -15px;
-}
-
-.card {
-  margin: 0 auto;
-  border: none;
-  background-color: #f5f5f5;
-}
-
-.card .carousel-item {
-  min-height: 190px;
-}
-
-.card .carousel-caption {
-  right: 15px;
-  left: 15px;
-  top: 15px;
-  color: #3d3d3d;
-  border: 1px solid #4c6b90;
-  background-color: white;
-  min-height: 160px;
-  padding: 15px;
-  text-align: left;
-}
-
-.card .carousel-caption .col-sm-3 {
-  display: flex;
-  align-items: center;
-}
-
-
-.card .carousel-control-prev, .card .carousel-control-next {
-  color: #3d3d3d !important;
-  opacity: 1 !important;
-}
-
-.carousel-control-prev-icon, .carousel-control-next-icon {
-  background-image: none;
-  color: #fff;
-  font-size: 14px;
-  background-color: #006199;
-  height: 32px;
-  line-height: 32px;
-  width: 32px;
-  text-decoration: none;
-}
-
-.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
-  opacity: 0.85;
-}
-
-.carousel-control-prev {
-  left: 40%;
-  top: 110%;
-}
-
-.carousel-control-next {
-  right: 40%;
-  top: 110%;
-}
-
-
-.carousel-caption h2 {
-  font-size: 14px;
-}
-
-.carousel-caption h2 span {
-  color: #cd3a54;
-}
-
-@media (min-width: 320px) and (max-width: 575px) {
-  .carousel-caption {
-    position: relative;
-  }
-
-  .card .carousel-caption {
-    left: 0;
-    top: 0;
-    margin-bottom: 15px;
-  }
-
-  .card .carousel-caption img {
-    margin: 0 auto;
-  }
-
-  .carousel-control-prev {
-    left: 35%;
-    top: 105%;
-  }
-
-  .carousel-control-next {
-    right: 35%;
-    top: 105%;
-  }
-
-  .card .carousel-caption h3 {
-    margin-top: 0;
-    font-size: 16px;
-    font-weight: 700;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 767px) {
-  .carousel-caption {
-    position: relative;
-  }
-
-  .card .carousel-caption {
-    left: 0;
-    top: 0;
-    margin-bottom: 15px;
-  }
-
-  .card .carousel-caption img {
-    margin: 0 auto;
-  }
-
-
-  .carousel-control-prev {
-    left: 35%;
-    top: 105%;
-  }
-
-  .carousel-control-next {
-    right: 35%;
-    top: 105%;
-  }
-}
-
-@media (min-width: 767px) and (max-width: 991px) {
-  .card .carousel-caption h3 {
-    margin-top: 0;
-    font-size: 16px;
-    font-weight: 700;
-  }
-}
-
-
-a {
-  text-decoration: none
-}
-/* /Referrals */
-
-
-#commonFooter {
-  background-color: #31404e;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: #e6f7ff;
-
-  h3 {
+    padding-left: 15px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: #006199;
+    font-size: 26px;
+    cursor: pointer;
     color: white;
   }
 
-  a {
-    color: #e6f7ff;
+
+  .overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #006199;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay a:hover, .overlay a:focus {
+    color: #b3e6ff;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 60px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .overlay a {
+      font-size: 20px
+    }
+
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+
+
+  #homePage {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  /*   Jumbotron   */
+  #homePageJumbotron {
+    background-color: #007abf;
+    color: white;
+    padding-top: 15px;
+  }
+
+  #homePageJumbotronText {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @media only screen and (max-width: 540px) {
+    #homePageJumbotronText {
+      padding-left: 20px;
+    }
+  }
+
+
+  #adMainMessage {
+    font-size: 3em;
+    font-weight: 600;
+    line-height: 1.2em;
+    text-align: left; /*bootstrap override*/
+  }
+
+  @media only screen and (max-width: 479px) {
+
+    #adMainMessage {
+      font-size: 2.6em;
+      font-weight: 600;
+      line-height: 1.2em;
+      //text-align: right; /*bootstrap override*/
+    }
+
+    //   #adFooterMessage, #adSubMessage {
+    //   display: none;
+    //}
+  }
+
+
+
+  #adSubMessage {
+    font-size: 1.8em;
+    text-align: left; /*bootstrap override*/
+  }
+
+
+
+  #jumbotronBulletPoints {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: left;
+  }
+
+  .fa-check {
+    padding-right: 8px;
+  }
+
+
+  @media only screen and (min-width: 480px) {
+
+    #jumbotronBulletPoints {
+      font-size: 1.2em;
+    }
+  }
+
+  /*----/Jumbotron */
+
+  #routerContainer {
+  }
+
+  #welcomeAndContactForm {
+    background-color: #f5f5f5;
+  }
+
+  #welcomeText {
+    text-align: justify;
+    padding-bottom: 20px;
+  }
+
+
+
+  /*--- Quote Form*/
+
+  #quoteForm {
+    border: 1px solid #ced4da;
+    background-color: white;
+    padding-top: 20px;
+  }
+  /*--- /Quote Form*/
+
+
+  /*--Services*/
+
+  serviceImage {
+    background-color: white;
+  }
+  /* ---- PRODUCT ICONS ------ */
+
+
+  #referrals {
+    padding-bottom: 80px;
+  }
+  /*Services Icons*/
+
+  #servicesPageHeader {
+    background-color: white;
+  }
+
+  #productIconsAndTitleContainer {
+    background-color: white;
+  }
+
+
+  a:link {
+    text-decoration: none;
+  }
+
+  a:visited {
+    text-decoration: none;
   }
 
   a:hover {
-    color: #00aaff;
+    text-decoration: none;
   }
-}
+
+  a:active {
+    text-decoration: none;
+  }
+
+  a:focus {
+    text-decoration: none;
+  }
+
+
+
+  @media only screen and (min-width:576px) {
+    #productIconsAndTitleContainer {
+    }
+  }
+
+  #productIconsRow {
+  }
+
+
+  .productSvgAndHeader, .viewAllProductsLink {
+    //background-color: #499933;
+    //color: white;
+    color: #4c6b90;
+    margin-top: 1.1em;
+    margin-bottom: 1.1em;
+    padding-top: 1em;
+    padding-bottom: 1.2em;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .viewAllProductsLink a {
+    color: white; /*Boostrap override*/
+  }
+  //
+  //.productSvgAndHeader a:hover, .viewAllProductsLink a:hover {
+  //color: purple; /*Boostrap override*/
+  //background-color:red;
+  //}
+
+  .anchorCol:hover {
+    //.serviceImage{color:yellow;} this is an image so can't change color. Maybe when it's an SVG u might want to change its color
+    .productHeading {
+      color: #007abf;
+    }
+
+    border-bottom: 2px solid #007abf;
+  }
+
+
+  @media only screen and (min-width:768px) and (max-width:992px) {
+    .productSvgAndHeader {
+      //height: 302px; /*at this view point 'Panel Products' and 'Timber Products' are taller than 'Insulation' and 'Joists' because they have two words. This makes them all the same height*/
+    }
+  }
+
+  svg {
+    width: 100%;
+  }
+
+  .productSvg {
+    padding-top: 1.5em;
+    fill: #fff;
+    background-color: white;
+  }
+
+  .st0 {
+    fill: none;
+    stroke: white;
+    stroke-miterlimit: 10;
+  }
+
+  .productHeading {
+    padding: .5em;
+    // font-size: 1.4em;
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  .serivceDescription {
+    color: #212529;
+    text-align: justify;
+  }
+
+
+  #servicesBulletPoints {
+    padding-bottom: 10px;
+  }
+
+
+  #servicesBulletPoints .fa-check {
+    color: #006ba1;
+  }
+  /* ----/Services -----*/
+  #callUsBanner {
+    background-color: #007abf;
+    color: white;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  /*------ Google Map*/
+  #findUs {
+    padding-bottom: 60px;
+    background-color:  white;
+  }
+
+  .googleMap {
+    max-width: 100%;
+    position: relative;
+    padding-bottom: 50%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+  }
+
+  .googleMap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  /* ----- /Google Map*/
+
+  /* ---- Referrals ------*/
+  #referrals {
+    background-color: #f5f5f5;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .card {
+    margin: 0 auto;
+    border: none;
+    background-color: #f5f5f5;
+  }
+
+  .card .carousel-item {
+    min-height: 190px;
+  }
+
+  .card .carousel-caption {
+    right: 15px;
+    left: 15px;
+    top: 15px;
+    color: #3d3d3d;
+    border: 1px solid #4c6b90;
+    background-color: white;
+    min-height: 160px;
+    padding: 15px;
+    text-align: left;
+  }
+
+  .card .carousel-caption .col-sm-3 {
+    display: flex;
+    align-items: center;
+  }
+
+
+  .card .carousel-control-prev, .card .carousel-control-next {
+    color: #3d3d3d !important;
+    opacity: 1 !important;
+  }
+
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    background-image: none;
+    color: #fff;
+    font-size: 14px;
+    background-color: #006199;
+    height: 32px;
+    line-height: 32px;
+    width: 32px;
+    text-decoration: none;
+  }
+
+  .carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
+    opacity: 0.85;
+  }
+
+  .carousel-control-prev {
+    left: 40%;
+    top: 110%;
+  }
+
+  .carousel-control-next {
+    right: 40%;
+    top: 110%;
+  }
+
+
+  .carousel-caption h2 {
+    font-size: 14px;
+  }
+
+  .carousel-caption h2 span {
+    color: #cd3a54;
+  }
+
+  @media (min-width: 320px) and (max-width: 575px) {
+    .carousel-caption {
+      position: relative;
+    }
+
+    .card .carousel-caption {
+      left: 0;
+      top: 0;
+      margin-bottom: 15px;
+    }
+
+    .card .carousel-caption img {
+      margin: 0 auto;
+    }
+
+    .carousel-control-prev {
+      left: 35%;
+      top: 105%;
+    }
+
+    .carousel-control-next {
+      right: 35%;
+      top: 105%;
+    }
+
+    .card .carousel-caption h3 {
+      margin-top: 0;
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    .carousel-caption {
+      position: relative;
+    }
+
+    .card .carousel-caption {
+      left: 0;
+      top: 0;
+      margin-bottom: 15px;
+    }
+
+    .card .carousel-caption img {
+      margin: 0 auto;
+    }
+
+
+    .carousel-control-prev {
+      left: 35%;
+      top: 105%;
+    }
+
+    .carousel-control-next {
+      right: 35%;
+      top: 105%;
+    }
+  }
+
+  @media (min-width: 767px) and (max-width: 991px) {
+    .card .carousel-caption h3 {
+      margin-top: 0;
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+
+
+  a {
+    text-decoration: none
+  }
+  /* /Referrals */
+
+
+  /* ---- Home Page about us*/
+
+
+
+  /* ----/ Home Page about us*/
+  /* ---- Common Footer*/
+  #commonFooter {
+    background-color: #31404e;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #e6f7ff;
+
+    h3 {
+      color: white;
+    }
+
+    a {
+      color: #e6f7ff;
+    }
+
+    a:hover {
+      color: #00aaff;
+    }
+  }
