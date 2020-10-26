@@ -21,6 +21,10 @@ import { NonEmergencyPlumbingPricesComponent } from './non-emergency-plumbing-pr
 //Contact:
 import { ContactDublinPlumberComponent } from './contact-dublin-plumber/contact-dublin-plumber.component';
 
+//About:
+import { AboutUsComponent } from './common/about-us/about-us.component';
+
+
 
 const routes: Routes = [
 
@@ -41,6 +45,9 @@ const routes: Routes = [
 
   //Contact
   { path: 'contact-dublin-plumber', component: ContactDublinPlumberComponent },
+
+  //About
+  { path: 'about-us', component: AboutUsComponent },
 
   { path: 'home', component: HomeComponent },
   { path: '**', component: HomeComponent }

@@ -16,7 +16,7 @@ import { ServicesSidebarComponent } from './services/common/services-sidebar/ser
 import { AreasComponent } from './areas/areas.component';
 import { FaqsComponent } from './faqs/faqs.component';
 import { EmergencyPlumbingPricesComponent } from './emergency-plumbing-prices/emergency-plumbing-prices.component';
-import { AboutUsComponent } from './about-us/about-us.component';
+import { AboutUsComponent } from './common/about-us/about-us.component';
 import { ContactDublinPlumberComponent } from './contact-dublin-plumber/contact-dublin-plumber.component';
 import { PlumberSwordsComponent } from './areas/plumber-swords/plumber-swords.component';
 import { NonEmergencyPlumbingPricesComponent } from './non-emergency-plumbing-prices/non-emergency-plumbing-prices.component';
