@@ -18,6 +18,9 @@ import { PlumberSwordsComponent } from './areas/plumber-swords/plumber-swords.co
 import { EmergencyPlumbingPricesComponent } from './emergency-plumbing-prices/emergency-plumbing-prices.component';
 import { NonEmergencyPlumbingPricesComponent } from './non-emergency-plumbing-prices/non-emergency-plumbing-prices.component';
 
+//Contact:
+import { ContactDublinPlumberComponent } from './contact-dublin-plumber/contact-dublin-plumber.component';
+
 
 const routes: Routes = [
 
@@ -36,7 +39,8 @@ const routes: Routes = [
   { path: 'emergency-plumbing-prices', component: EmergencyPlumbingPricesComponent },
   { path: 'non-emergency-plumbing-prices', component: NonEmergencyPlumbingPricesComponent },
 
-
+  //Contact
+  { path: 'contact-dublin-plumber', component: ContactDublinPlumberComponent },
 
   { path: 'home', component: HomeComponent },
   { path: '**', component: HomeComponent }

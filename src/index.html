@@ -17,6 +17,40 @@
 
 </head>
 <body>
+  <div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <a href="#">Home</a>
+      <a href="/plumbing-services">Services</a>
+      <a href="/emergency-plumbing-prices/" >Rates</a>
+      <a href="/areas">Areas</a>
+      <a href="/faqs" >FAQ</a>
+      <a href="/about-us" >About</a>
+      <a href="/contact-dublin-plumber/" >Contact</a>
+
+    </div>
+
+  </div>
+
+  <div class="row contactCol" id="burgerBar">
+    <span onclick="openNav()">&#9776; Menu</span>
+  </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.display = "block";
+      console.write("OpenNav function");
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.display = "none";
+      console.write("CloseNav function");
+    }
+  </script>
   <app-root></app-root>
 </body>
 </html>

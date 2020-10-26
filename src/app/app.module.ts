@@ -22,6 +22,7 @@ import { PlumberSwordsComponent } from './areas/plumber-swords/plumber-swords.co
 import { NonEmergencyPlumbingPricesComponent } from './non-emergency-plumbing-prices/non-emergency-plumbing-prices.component';
 import { CommonComponent } from './common/common.component';
 import { FooterComponent } from './common/footer/footer.component';
+import { ContactQuoteFormComponent } from './common/contact-quote-form/contact-quote-form.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { FooterComponent } from './common/footer/footer.component';
     PlumberSwordsComponent,
     NonEmergencyPlumbingPricesComponent,
     CommonComponent,
-    FooterComponent
+    FooterComponent,
+    ContactQuoteFormComponent
   ],
   imports: [
     BrowserModule,
