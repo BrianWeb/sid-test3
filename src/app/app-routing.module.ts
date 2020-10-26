@@ -50,7 +50,10 @@ const routes: Routes = [
   { path: 'about-us', component: AboutUsComponent },
 
   { path: 'home', component: HomeComponent },
+
   { path: '**', component: HomeComponent }
+
+
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
