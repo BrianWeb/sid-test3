@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+//Contentful
+import { ContentfulService } from '../../contentful.service/contentful.service';
+import { Entry } from 'contentful';
+
 @Component({
   selector: 'app-plumber-swords',
   templateUrl: './plumber-swords.component.html',
@@ -7,9 +11,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlumberSwordsComponent implements OnInit {
 
-  constructor() { }
+  areas: Entry<any>[] = [];
 
-  ngOnInit(): void {
+
+   constructor(private contentfulService: ContentfulService) { }
+
+  ngOnInit() {
+
+    this.contentfulService.getAreas()
+      .then(areas => this.areas = areas)//Area Details
+
   }
 
 }

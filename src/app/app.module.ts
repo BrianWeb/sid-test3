@@ -24,6 +24,19 @@ import { CommonComponent } from './common/common.component';
 import { FooterComponent } from './common/footer/footer.component';
 import { ContactQuoteFormComponent } from './common/contact-quote-form/contact-quote-form.component';
 
+
+//Contentful:
+// import the new Contentful service
+import { ContentfulService } from './contentful.service/contentful.service';
+
+
+//Markdown
+import { NgxMdModule } from 'ngx-md';
+//import { HttpClientModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import { BlogComponent } from './blog/blog.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,13 +59,19 @@ import { ContactQuoteFormComponent } from './common/contact-quote-form/contact-q
     NonEmergencyPlumbingPricesComponent,
     CommonComponent,
     FooterComponent,
-    ContactQuoteFormComponent
+    ContactQuoteFormComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
+    //Markdown
+    HttpClientModule,
+    NgxMdModule.forRoot(),
+    
   ],
-  providers: [],
+  providers: [ContentfulService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

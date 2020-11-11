@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+//Contentful
+import { ContentfulService } from '../../../contentful.service/contentful.service';
+import { Entry } from 'contentful';
+
 @Component({
   selector: 'app-services-footer',
   templateUrl: './services-footer.component.html',
@@ -7,9 +11,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServicesFooterComponent implements OnInit {
 
-  constructor() { }
+  servicesFooters: Entry<any>[] = [];
 
-  ngOnInit(): void {
+  constructor(private contentfulService: ContentfulService) { }
+
+  ngOnInit() {
+
+    this.contentfulService.getServicesFooter()
+      .then(servicesFooters => this.servicesFooters = servicesFooters)  //Area Intro
+
+
   }
-
 }

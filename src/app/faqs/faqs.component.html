@@ -1,1 +1,16 @@
-<p>faqs works!</p>
+<div class="container margin-top">
+  <article class="article-sm">
+    <div class="row justifyText justify-content-center">
+
+      <ul>
+        <li *ngFor="let faq of faqs">
+          <div Markdown>
+            {{ faq.fields.faqListing }}
+          </div>
+        </li>
+      </ul>
+    </div>
+  </article>
+</div>
+
+

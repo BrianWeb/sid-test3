@@ -1,64 +1,73 @@
 
   <div class="margin-top">
     <article class="article-sm justifyText">
+      <!--
+        <h3>Get Over 40 Years Plumbing Experience</h3>
 
-      <h3>Get Over 40 Years Plumbing Experience</h3>
+        <div class="row">
 
-      <div class="row">
+          <div class="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-8">
 
-        <div class="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-8">
-          <p>Our services include a full range of Plumbing and Heating services in North Dublin which we have been providing for over 40 years.</p>
-          <br />
-          <h3>No Callout Fees</h3>
-          <p>
-            We never charge for call out fees. While some Dublin plumbing companies still charge customers callout fees, however, we only charge you for work we do and not for traveling to you.
-          </p>
-          <br />
-          <h3>Get A Free Estimate</h3>
-          <p>We are more than happy to give advice on which solution is most suitable for your needs, depending on your Plumbing Serviecs. Why not ask us to view your property and discuss the various options with you now. Our advice is free!</p>
-        </div>
-
-        <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-3 offset-xl-1">
-          <figure>
-            <img src="..\assets\images\services\wrench2.jpg">
-          </figure>
-        </div>
-      </div>
-
-      <br />
-      <h3>Key Benefits of Service</h3>
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-8">
-          <p>Whether you require simply deplete cleaning or a whole pipes registration, call our group of qualified and talented handymen. we take pride in the work we perform with our dedicated plumbers.</p>
-
-
-
-          <div class="serivceDescription">
-            <div id="servicesBulletPoints">
-              <ul class="fa-ul">
-                <li><span class="fa-li"><i class="fa fa-check" aria-hidden="true"> </i></span> Locally Own Operated</li>
-                <li><span class="fa-li"><i class="fa fa-check" aria-hidden="true"> </i></span> Workmanship guaranteed</li>
-                <li><span class="fa-li"><i class="fa fa-check" aria-hidden="true"> </i></span> Bonded and insured team</li>
-                <li><span class="fa-li"><i class="fa fa-check" aria-hidden="true"> </i></span> Licensed plumbing experts</li>
-                <li><span class="fa-li"><i class="fa fa-check" aria-hidden="true"> </i></span> Upfront, Flat Rate Pricing</li>
-                <li><span class="fa-li"><i class="fa fa-check" aria-hidden="true"> </i></span> Friendly, professionals</li>
-              </ul>
-            </div>
+            <p>Our services include a full range of Plumbing and Heating services in North Dublin which we have been providing for over 40 years.</p>
+            <br />
+            <h3>No Callout Fees</h3>
+            <p>
+              We never charge for call out fees. While some Dublin plumbing companies still charge customers callout fees, however, we only charge you for work we do and not for traveling to you.
+            </p>
+            <br />
+            <h3>Get A Free Estimate</h3>
+            <p>We are more than happy to give advice on which solution is most suitable for your needs, depending on your Plumbing Serviecs. Why not ask us to view your property and discuss the various options with you now. Our advice is free!</p>
           </div>
 
-          <br />
-          <p><strong>If you have a Plumbing or Heating related emergency call our 24-hour emergency service today on Mob <a href="tel:0866049361">086 604 9361</a> </strong></p>
-
+          <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-3 offset-xl-1">
+            <figure>
+              <img src="..\assets\images\services\wrench2.jpg">
+            </figure>
+          </div>
         </div>
 
-        <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-3 offset-xl-1">
-          <figure>
-            <img src="..\assets\images\services\wrench.jpg">
-          </figure>
-        </div>
+        <br />
+        <h3>Key Benefits of Service</h3>
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-8">
+            <p>Whether you require simply deplete cleaning or a whole pipes registration, call our group of qualified and talented handymen. we take pride in the work we perform with our dedicated plumbers.</p>
 
 
-      </div>
+
+            <div class="serivceDescription">
+              <div id="servicesBulletPoints">
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fa fa-check" aria-hidden="true"> </i></span> Locally Own Operated</li>
+                  <li><span class="fa-li"><i class="fa fa-check" aria-hidden="true"> </i></span> Workmanship guaranteed</li>
+                  <li><span class="fa-li"><i class="fa fa-check" aria-hidden="true"> </i></span> Bonded and insured team</li>
+                  <li><span class="fa-li"><i class="fa fa-check" aria-hidden="true"> </i></span> Licensed plumbing experts</li>
+                  <li><span class="fa-li"><i class="fa fa-check" aria-hidden="true"> </i></span> Upfront, Flat Rate Pricing</li>
+                  <li><span class="fa-li"><i class="fa fa-check" aria-hidden="true"> </i></span> Friendly, professionals</li>
+                </ul>
+              </div>
+            </div>
+
+            <br />
+            <p><strong>If you have a Plumbing or Heating related emergency call our 24-hour emergency service today on Mob <a href="tel:0866049361">086 604 9361</a> </strong></p>
+
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-3 offset-xl-1">
+            <figure>
+              <img src="..\assets\images\services\wrench.jpg">
+            </figure>
+          </div>
+
+
+        </div>-->
+
+      <ul>
+        <li *ngFor="let servicesFooter of servicesFooters">
+          <div Markdown>
+            {{ servicesFooter.fields.footerMainText }}
+          </div>
+        </li>
+      </ul>
 
 
     </article>

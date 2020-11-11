@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ServicesMainComponent } from '../services/common/services-main/services-main.component';
+
+//Contentful
+import { ContentfulService } from '../contentful.service/contentful.service';
+import { Entry } from 'contentful';
 
 @Component({
   selector: 'app-home',
@@ -8,9 +11,15 @@ import { ServicesMainComponent } from '../services/common/services-main/services
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  // define private class properties
+  homePageIntros: Entry<any>[] = [];
 
-  ngOnInit(): void {
+  constructor(private contentfulService: ContentfulService) { }
+
+  // fetch data on init
+  ngOnInit() {
+    this.contentfulService.getHomePageTestText()
+      .then(homePageIntros => this.homePageIntros = homePageIntros)
   }
 
 }

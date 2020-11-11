@@ -1,6 +1,15 @@
 <div class="container justifyText margin-top">
   <article class="article-sm">
 
+    <ul>
+      <li *ngFor="let areasPage of areasPages">
+        <div Markdown>
+          {{ areasPage.fields.areasPageIntroTextField}}
+        </div>
+      </li>
+    </ul>
+
+    <!--
     <h2>Emergency Plumber for all areas in North Dublin</h2>
 
     <strong>No Call Out Charge </strong>
@@ -16,17 +25,19 @@
     <p>2. We accept both Credit and Debit Cards</p>
 
     <p>3. We are just a phone call away any time.</p>
-
-    </article>
+      -->
+  </article>
 
   <article class="article-sm">
-    <h3>
-      <a routerLink="/areas/plumber-swords/" routerLinkActive="active">Plumber Swords</a>
-    </h3>
 
-    <p></p>
-    Will add other areas, which will look like the Swords page, above
-    <br/>
+
+    <ul>
+      <li *ngFor="let area of areas">
+        <div Markdown>
+          <h3> <a routerLink="/areas/plumber-{{ area.fields.areaName | lowercase}}" routerLinkActive="active">Plumber {{ area.fields.areaName}} </a></h3>
+        </div>
+      </li>
+    </ul>
 
   </article>
 
@@ -39,40 +50,51 @@
     </div>
   </article>
 
+
+ 
+
+
 </div>
-    <!--
-    <h3><strong><a href="https://sidsplumbing.ie/areas/plumber-swords/"> </a><a href="https://sidsplumbing.ie/areas/plumber-swords/">Plumber Swords</a></strong></h3>
 
-    <h3><strong><a href="https://sidsplumbing.ie/areas/plumber-swords/"> </a><a href="https://sidsplumbing.ie/areas/plumber-swords/">Plumber Swords</a></strong></h3>
 
-    <h3><strong><a href="https://sidsplumbing.ie/plumber-castleknock/"> </a></strong><strong><a href="https://sidsplumbing.ie/areas/plumber-malahide/">Plumber Malahide</a></strong></h3>
+<!--
+<h3><strong><a href="https://sidsplumbing.ie/areas/plumber-swords/"> </a><a href="https://sidsplumbing.ie/areas/plumber-swords/">Plumber Swords</a></strong></h3>
 
-    <h3><strong><a href="https://sidsplumbing.ie/plumber-castleknock/"> </a></strong><strong><a href="https://sidsplumbing.ie/areas/plumber-portmarnock/">Plumber Portmarnock </a></strong></h3>
+<h3><strong><a href="https://sidsplumbing.ie/areas/plumber-swords/"> </a><a href="https://sidsplumbing.ie/areas/plumber-swords/">Plumber Swords</a></strong></h3>
 
-    <h3><strong><a href="https://sidsplumbing.ie/plumber-castleknock/"> </a></strong><strong><a href="https://sidsplumbing.ie/areas/plumber-blanchardstown/">Plumber Blanchardstown</a></strong></h3>
+<h3><strong><a href="https://sidsplumbing.ie/plumber-castleknock/"> </a></strong><strong><a href="https://sidsplumbing.ie/areas/plumber-malahide/">Plumber Malahide</a></strong></h3>
 
-    <h3><strong><a href="https://sidsplumbing.ie/plumber-castleknock/"> </a></strong><strong><a href="https://sidsplumbing.ie/areas/plumber-finglas/">Plumber Finglas</a></strong></h3>
+<h3><strong><a href="https://sidsplumbing.ie/plumber-castleknock/"> </a></strong><strong><a href="https://sidsplumbing.ie/areas/plumber-portmarnock/">Plumber Portmarnock </a></strong></h3>
 
-    <h3><strong><a href="https://sidsplumbing.ie/plumber-castleknock/"> </a></strong><strong><a href="https://sidsplumbing.ie/areas/plumber-clontarf/">Plumber Clontarf </a></strong></h3>
+<h3><strong><a href="https://sidsplumbing.ie/plumber-castleknock/"> </a></strong><strong><a href="https://sidsplumbing.ie/areas/plumber-blanchardstown/">Plumber Blanchardstown</a></strong></h3>
 
-    <h3><strong><a href="https://sidsplumbing.ie/plumber-castleknock/"> </a><a href="https://sidsplumbing.ie/plumber-castleknock/">Plumber Castleknock </a></strong></h3>
+<h3><strong><a href="https://sidsplumbing.ie/plumber-castleknock/"> </a></strong><strong><a href="https://sidsplumbing.ie/areas/plumber-finglas/">Plumber Finglas</a></strong></h3>
 
-    <h3><strong><a href="https://sidsplumbing.ie/plumber-castleknock/"> </a></strong><strong><a href="https://sidsplumbing.ie/areas/plumber-artane/">Plumber Artane </a></strong></h3>
+<h3><strong><a href="https://sidsplumbing.ie/plumber-castleknock/"> </a></strong><strong><a href="https://sidsplumbing.ie/areas/plumber-clontarf/">Plumber Clontarf </a></strong></h3>
 
-    <h3><strong><a href="https://sidsplumbing.ie/areas/plumber-swords/"> </a></strong><strong><a href="https://sidsplumbing.ie/areas/plumber-santry/">Plumber Santry </a></strong></h3>
+<h3><strong><a href="https://sidsplumbing.ie/plumber-castleknock/"> </a><a href="https://sidsplumbing.ie/plumber-castleknock/">Plumber Castleknock </a></strong></h3>
 
-    <h3><strong><a href="https://sidsplumbing.ie/areas/plumber-swords/"> </a></strong><strong><a href="https://sidsplumbing.ie/areas/plumber-drumcondra/">Plumber Drumcondra </a></strong></h3>
+<h3><strong><a href="https://sidsplumbing.ie/plumber-castleknock/"> </a></strong><strong><a href="https://sidsplumbing.ie/areas/plumber-artane/">Plumber Artane </a></strong></h3>
 
-    <h3><strong><a href="https://sidsplumbing.ie/areas/plumber-swords/"> </a></strong><strong><a href="https://sidsplumbing.ie/areas/plumber-phibsboro/">Plumber Phibsboro</a></strong></h3>
+<h3><strong><a href="https://sidsplumbing.ie/areas/plumber-swords/"> </a></strong><strong><a href="https://sidsplumbing.ie/areas/plumber-santry/">Plumber Santry </a></strong></h3>
 
-    <h3><strong><a href="https://sidsplumbing.ie/areas/plumber-swords/"> </a></strong><strong><a href="https://sidsplumbing.ie/areas/plumber-glasnevin/">Plumber Glasnevin </a></strong></h3>
+<h3><strong><a href="https://sidsplumbing.ie/areas/plumber-swords/"> </a></strong><strong><a href="https://sidsplumbing.ie/areas/plumber-drumcondra/">Plumber Drumcondra </a></strong></h3>
 
-    <h3><strong><a href="https://sidsplumbing.ie/areas/plumber-swords/"> </a></strong><strong><a href="https://sidsplumbing.ie/areas/plumber-sutton/">Plumber Sutton </a></strong></h3>
+<h3><strong><a href="https://sidsplumbing.ie/areas/plumber-swords/"> </a></strong><strong><a href="https://sidsplumbing.ie/areas/plumber-phibsboro/">Plumber Phibsboro</a></strong></h3>
 
-    <h3><strong><a href="https://sidsplumbing.ie/areas/plumber-swords/"> </a></strong><strong><a href="https://sidsplumbing.ie/areas/plumber-howth/">Plumber Howth </a></strong></h3>
+<h3><strong><a href="https://sidsplumbing.ie/areas/plumber-swords/"> </a></strong><strong><a href="https://sidsplumbing.ie/areas/plumber-glasnevin/">Plumber Glasnevin </a></strong></h3>
 
-    <h3><strong><a href="https://sidsplumbing.ie/areas/plumber-swords/"> </a></strong><strong><a href="https://sidsplumbing.ie/areas/plumbers-raheny/">Plumber Raheny </a></strong></h3>
+<h3><strong><a href="https://sidsplumbing.ie/areas/plumber-swords/"> </a></strong><strong><a href="https://sidsplumbing.ie/areas/plumber-sutton/">Plumber Sutton </a></strong></h3>
 
-    <h3><strong><a href="https://sidsplumbing.ie/areas/plumber-swords/"> </a></strong><strong><a href="https://sidsplumbing.ie/areas/plumber-ballymun-2/">Plumber Ballymun</a></strong></h3>
+<h3><strong><a href="https://sidsplumbing.ie/areas/plumber-swords/"> </a></strong><strong><a href="https://sidsplumbing.ie/areas/plumber-howth/">Plumber Howth </a></strong></h3>
 
-      -->
+<h3><strong><a href="https://sidsplumbing.ie/areas/plumber-swords/"> </a></strong><strong><a href="https://sidsplumbing.ie/areas/plumbers-raheny/">Plumber Raheny </a></strong></h3>
+
+<h3><strong><a href="https://sidsplumbing.ie/areas/plumber-swords/"> </a></strong><strong><a href="https://sidsplumbing.ie/areas/plumber-ballymun-2/">Plumber Ballymun</a></strong></h3>
+
+  -->
+
+
+
+
+

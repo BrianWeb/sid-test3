@@ -24,6 +24,9 @@ import { ContactDublinPlumberComponent } from './contact-dublin-plumber/contact-
 //About:
 import { AboutUsComponent } from './common/about-us/about-us.component';
 
+//FAQ:
+import { FaqsComponent } from './faqs/faqs.component';
+
 
 
 const routes: Routes = [
@@ -48,11 +51,17 @@ const routes: Routes = [
 
   //About
   { path: 'about-us', component: AboutUsComponent },
+  { path: 'about', component: AboutUsComponent },
+
+  //FAQ
+  { path: 'faqs', component: FaqsComponent },
+  { path: 'faq', component: FaqsComponent },
+
 
   { path: 'home', component: HomeComponent },
 
-  { path: '**', component: HomeComponent }
-
+  //catch everything other link the user may try to access:
+  { path: '**', component: HomeComponent },
 
 ];
 @NgModule({
