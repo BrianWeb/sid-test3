@@ -11,7 +11,8 @@ const CONFIG = {
     areasPage: 'areasPage',
     area: 'area',
     servicesFooter: 'servicesFooter',
-    faq: 'faq'
+    faq: 'faq',
+    blogPost: 'blogPost'
   }
 
   /*
@@ -77,5 +78,16 @@ export class ContentfulService {
     }, query))
       .then(res => res.items);
   }
+
+  //BLOG
+
+  getBlog(query?: object): Promise<Entry<any>[]> {
+    return this.cdaClient.getEntries(Object.assign({
+      content_type: CONFIG.contentTypeIds.blogPost
+    }, query))
+      .then(res => res.items);
+  }
+
+
 
 }

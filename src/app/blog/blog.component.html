@@ -1,1 +1,13 @@
-<p>blog works!</p>
+<div class="container margin-top">
+  <article class="article-sm">
+    <div class="row justifyText justify-content-center">
+      <ul>
+        <li *ngFor="let blogPost of blogPosts">
+          <!--<div Markdown>-->
+          {{ blogPost.fields.test }}
+          <!--</div>-->
+          </li>
+        </ul>
+      </div>
+    </article>
+  </div>

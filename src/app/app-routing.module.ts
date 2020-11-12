@@ -27,6 +27,9 @@ import { AboutUsComponent } from './common/about-us/about-us.component';
 //FAQ:
 import { FaqsComponent } from './faqs/faqs.component';
 
+//BLOG:
+import { BlogComponent } from './blog/blog.component';
+
 
 
 const routes: Routes = [
@@ -57,11 +60,13 @@ const routes: Routes = [
   { path: 'faqs', component: FaqsComponent },
   { path: 'faq', component: FaqsComponent },
 
+  //BLOG
+  { path: 'blog', component: BlogComponent },
 
   { path: 'home', component: HomeComponent },
 
   //catch everything other link the user may try to access:
-  { path: '**', component: HomeComponent },
+  { path: '**', component: HomeComponent }
 
 ];
 @NgModule({
