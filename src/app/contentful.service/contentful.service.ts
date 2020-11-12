@@ -81,7 +81,7 @@ export class ContentfulService {
 
   //BLOG
 
-  getBlog(query?: object): Promise<Entry<any>[]> {
+  getBlogPost(query?: object): Promise<Entry<any>[]> {
     return this.cdaClient.getEntries(Object.assign({
       content_type: CONFIG.contentTypeIds.blogPost
     }, query))

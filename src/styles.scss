@@ -127,6 +127,17 @@ img {
   text-align: center;
 }
 
+.centerImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+.imagePadding{
+    padding:40px;
+}
+
 .justifyText {
   text-align: justify;
 }

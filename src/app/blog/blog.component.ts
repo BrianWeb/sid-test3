@@ -20,7 +20,7 @@ export class BlogComponent implements OnInit {
 
   // fetch data on init
   ngOnInit() {
-    this.contentfulService.getHomePageTestText()
+    this.contentfulService.getBlogPost()
       .then(blogPosts => this.blogPosts = blogPosts)
   }
 
