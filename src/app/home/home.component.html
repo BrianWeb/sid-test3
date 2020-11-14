@@ -40,11 +40,10 @@
               <div id="adMainMessage">
                 Plumbing Professionals
               </div>
-              <div id="jumbotronBulletPoints">
-                <div><i class="fa fa-check" aria-hidden="true"> </i> 24 Hour Emergency Service</div>
-                <div><i class="fa fa-check" aria-hidden="true"> </i> Upfront, Flat Rate Pricing</div>
-                <div><i class="fa fa-check" aria-hidden="true"> </i> Courteous, Uniformed &nbsp;Professionals</div>
-                <div><i class="fa fa-check" aria-hidden="true"> </i> Serving all of Dublin</div>
+              <div id="jumbotronBulletPoints" *ngFor="let homePageIntro of homePageIntros">
+                <div><i class="fa fa-check" aria-hidden="true"> </i> {{homePageIntro.fields.homePageBannerTickPoint1}}</div>
+                <div><i class="fa fa-check" aria-hidden="true"> </i> {{homePageIntro.fields.homePageBannerTickPoint2}}</div>
+                <div><i class="fa fa-check" aria-hidden="true"> </i> {{homePageIntro.fields.homePageBannerTickPoint3}}</div>
               </div>
               <br />
               <span class="googleReviewStars">
@@ -53,27 +52,22 @@
               </span>
             </div>
           </div>
-
           <div class="col-12 col-sm-12 col-md-4 col-lg-5 col-xl-5 ">
             <img src="..\assets\images\sid_no_background_small.png" id="sidNoBackgroundSmall">
           </div>
-
-
         </div><!-- /homePageJumbotron-->
       </div>
     </div>
-
     <!---Welcome text & Contact form-->
     <article id="welcomeAndContactForm" class="row article-lg">
       <div class="container">
         <div class="row justify-content-center">
-
           <div class="col-12   col-sm-12   col-md-7   col-lg-6  col-xl-6">
-
             <ul>
               <li *ngFor="let homePageIntro of homePageIntros">
                 <div Markdown>
-                  {{ homePageIntro.fields.homePageIntroTextField }}
+                  {{ homePageIntro.fields.homePageIntroTextField
+                  }}
                 </div>
               </li>
             </ul>

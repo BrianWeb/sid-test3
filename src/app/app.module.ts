@@ -23,7 +23,7 @@ import { NonEmergencyPlumbingPricesComponent } from './non-emergency-plumbing-pr
 import { CommonComponent } from './common/common.component';
 import { FooterComponent } from './common/footer/footer.component';
 import { ContactQuoteFormComponent } from './common/contact-quote-form/contact-quote-form.component';
-
+import { BlogComponent } from './blog/blog.component';
 
 //Contentful:
 // import the new Contentful service
@@ -34,7 +34,7 @@ import { ContentfulService } from './contentful.service/contentful.service';
 import { NgxMdModule } from 'ngx-md';
 //import { HttpClientModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
-import { BlogComponent } from './blog/blog.component';
+
 
 
 @NgModule({

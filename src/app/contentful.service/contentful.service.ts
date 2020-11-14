@@ -39,7 +39,7 @@ export class ContentfulService {
   constructor() { }
 
   //HOME PAGE
-  getHomePageTestText(query?: object): Promise<Entry<any>[]> {
+  getHomePageIntro(query?: object): Promise<Entry<any>[]> {
     return this.cdaClient.getEntries(Object.assign({
       content_type: CONFIG.contentTypeIds.homePageIntro
     }, query))

@@ -16,7 +16,7 @@ export class BlogComponent implements OnInit {
   // define private class properties
   blogPosts: Entry<any>[] = [];
 
-  constructor(private contentfulService: ContentfulService) { }
+  constructor(private contentfulService: ContentfulService) { };
 
   // fetch data on init
   ngOnInit() {
