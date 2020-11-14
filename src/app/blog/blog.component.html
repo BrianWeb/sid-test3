@@ -1,8 +1,10 @@
 <div class="container margin-top">
-  <article class="article-sm">
+ 
 
-    <div *ngFor="let blogPost of blogPosts">
+  <div *ngFor="let blogPost of blogPosts">
 
+
+    <article class="article-sm article-blog">
       <div class="row">
         <div class="col">
           <div Markdown>
@@ -13,7 +15,6 @@
 
       <div class="row">
 
-
         <div class="col-12   col-sm-12   col-md-8   col-lg-6  col-xl-7">
 
           <div Markdown>
@@ -21,21 +22,19 @@
 
           </div>
           <br />
-          <br />
-
+         
+        </div>
 
         <div class="col-12   col-sm-12   col-md-4   col-lg-5 offset-lg-1    col-xl-4 offset-xl-1  ">
 
-  <img src="{{ blogPost.fields.blogPostImage.fields.file.url }}" id="leaking-tap" class="centerImage">
-
-
-      </div>  -->
+          <img src="{{ blogPost.fields.blogPostImage.fields.file.url }}" id="leaking-tap" class="centerImage">
 
         </div>
 
       </div>
 
-    </div>
+    </article>
+  </div>
 
-  </article>
+
 </div>
