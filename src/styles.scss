@@ -279,7 +279,7 @@ img {
 }
 
 #sidNoBackgroundSmall {
-  max-width: 100%;
+  max-width: 300px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -307,7 +307,7 @@ img {
 /*-----------Contact Columns-------------------*/
 .contactCol {
   line-height: 45px;
-  font-size: 1.3em;
+  font-size: 1.5em;
   /*nice orange background-color: #E62E00;*/
   //display: flex;
   text-align: center;
@@ -315,7 +315,7 @@ img {
 }
 
 .contactCol .phoneNo {
-  font-size: 1.6em;
+ // font-size: 1.6em;
 }
 
 @media only screen and (min-width:767px) {
@@ -518,9 +518,8 @@ div.scrollmenu a:visited {
   */
 /* border under links on hover */
 /*-------/Nav Bar-----------*/
-#sidNoBackgroundSmall {
-  max-width: 300px
-}
+
+
 /*Overlay NAV BAR*/
 @media only screen and (min-width:778px) {
   #burgerBar {
@@ -603,8 +602,7 @@ div.scrollmenu a:visited {
 }
 
 #homePageJumbotronText {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 @media only screen and (max-width: 540px) {
@@ -837,7 +835,7 @@ svg {
   margin-left: -15px;
   margin-right: -15px;
 }
-
+/**/
 .card {
   margin: 0 auto;
   border: none;
@@ -873,7 +871,7 @@ svg {
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
   background-image: none;
-  color: #fff;
+  color: green;
   font-size: 14px;
   background-color: #006199;
   height: 32px;
@@ -972,6 +970,19 @@ svg {
   }
 }
 
+ngb-carousel .picsum-img-wrapper {
+  position: relative;
+  height: 100px;
+  padding-top: 20%; /* Keep ratio for 900x500 images */
+}
+
+
+ol li{
+    display:none;
+}
+.carousel-indicators li{
+    display:none;
+}
 
 a {
   text-decoration: none
@@ -1001,3 +1012,6 @@ a {
     color: #00aaff;
   }
 }
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

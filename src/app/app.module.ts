@@ -32,9 +32,13 @@ import { ContentfulService } from './contentful.service/contentful.service';
 
 //Markdown
 import { NgxMdModule } from 'ngx-md';
+
 //import { HttpClientModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 
+
+// RECOMMENDED
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 
 @NgModule({
@@ -69,6 +73,12 @@ import { HttpClientModule } from '@angular/common/http';
     //Markdown
     HttpClientModule,
     NgxMdModule.forRoot(),
+
+     //NG bootstrap
+    //NgbModule,
+
+    //ngx-bootstrap
+    CarouselModule.forRoot()
     
   ],
   providers: [ContentfulService],

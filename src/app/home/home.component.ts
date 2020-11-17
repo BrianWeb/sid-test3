@@ -14,16 +14,16 @@ export class HomeComponent implements OnInit {
   // define private class properties
   homePagePageBannerTickPointss: Entry<any>[] = [];
   homePageIntros: Entry<any>[] = [];
-
+  //homePageBannerTickPoint1: Entry<any>[] = [];
   constructor(private contentfulService: ContentfulService) {
-    const myVar = "BP";
-    console.log(myVar);
+  
   }
 
   // fetch data on init
   ngOnInit() {
     this.contentfulService.getHomePageIntro()
       .then(homePageIntros => this.homePageIntros = homePageIntros)
+  
   }
 
 }
