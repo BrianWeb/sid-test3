@@ -76,14 +76,67 @@
 
   <article id="referrals" class="article-lg">
 
+
     <div class="container">
       <h2 class="text-center articleTitle">What Our Clients Say</h2>
+      <br/>
+
+      <div *ngFor="let review of reviews; index as i" id="reviews">
+        <div class="reviewEntry">
+          <div class="row">
+            <div class="col-12  col-sm-12 col-md-3 col-lg-2 col-xl-2">
+              <div class="reviewName"><strong>{{review.name}}</strong><br /></div>
+              <i class="fa fa-star" aria-hidden="true"> </i><i class="fa fa-star" aria-hidden="true"> </i><i class="fa fa-star" aria-hidden="true"> </i><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><br />
+              {{review.date}}
+            </div>
+            <div class="col-12  col-sm-12 col-md-9 col-lg-10 col-xl-10">
+              <strong>Positives: </strong>{{review.positives}}<br />
+              <div class="reviewMainText">{{review.mainText}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="collapse" id="collapseExample">
+        <div *ngFor="let test of tests; index as i" id="reviews">
+          <div class="reviewEntry">
+            <div class="row">
+              <div class="col-12  col-sm-12 col-md-3 col-lg-2 col-xl-2">
+                <div class="reviewName"><strong>{{test.name}}</strong><br /></div>
+                <i class="fa fa-star" aria-hidden="true"> </i><i class="fa fa-star" aria-hidden="true"> </i><i class="fa fa-star" aria-hidden="true"> </i><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><br />
+                {{test.date}}
+              </div>
+              <div class="col-12  col-sm-12 col-md-9 col-lg-10 col-xl-10">
+                <strong>Positives: </strong>{{test.positives}}<br />
+                <div class="reviewMainText">{{test.mainText}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br/>
+      <a data-toggle="collapse" (click)="toggleLink()" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        <h5>{{showLink ? 'See less' : 'See more...'}}</h5>
+        <br />
+      </a>
+
+      <div class="row justify-content-center">
+        <a href="https://www.google.com/search?q=sids+plumbing&oq=sids&aqs=chrome.2.69i57j46j0l3.3469j0j7&client=ms-android-motorola-rev2&sourceid=chrome-mobile&ie=UTF-8#trex=m_t:lcl_akp,rc_f:rln,rc_ludocids:18379219811283239732,ru_lqi:Cg1zaWRzIHBsdW1iaW5nSI239umsj4CACFomCg1zaWRzIHBsdW1iaW5nEAAQARgAGAEiDXNpZHMgcGx1bWJpbmc,trex_id:v3j6Zc">
+         
+            <div class="viewAllProductsLink">
+              Leave a Review
+            </div>
+        
+        </a>
+      </div>
+
+
 
 
 
 
     </div>
-
   </article>
 
   <article id="callUsBanner" class="centerText article-lg">
@@ -112,55 +165,61 @@
     </div>
 
   </article>
-  <!--
-    <app-about-us></app-about-us>
 
-    CAROSOUEL NEW
-    <carousel>
-      <slide>
+</div>
 
-        <div class="row">
-          <div class="col-6 col-sm-6 col-6 col-lg-6 col-6 col-xl-6">
-            <div class="text-center py-5 bg-dark text-white">
-              <h2>First custom content</h2>
-              <div class="lead">
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-sm-6 col-6 col-lg-6 col-6 col-xl-6">
-            <div class="text-center py-5 bg-dark text-white">
-              <h2>BO</h2>
-              <div class="lead">
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-              </div>
+
+
+
+
+<!--
+  <app-about-us></app-about-us>
+
+  CAROSOUEL NEW
+  <carousel>
+    <slide>
+
+      <div class="row">
+        <div class="col-6 col-sm-6 col-6 col-lg-6 col-6 col-xl-6">
+          <div class="text-center py-5 bg-dark text-white">
+            <h2>First custom content</h2>
+            <div class="lead">
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </div>
           </div>
         </div>
-
-      </slide>
-
-
-  <slide>
-    <div class="text-center py-5 bg-dark text-white">
-      <h2>Second custom content</h2>
-      <div class="lead">
-        <h3>Second slide label</h3>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <div class="col-6 col-sm-6 col-6 col-lg-6 col-6 col-xl-6">
+          <div class="text-center py-5 bg-dark text-white">
+            <h2>BO</h2>
+            <div class="lead">
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+          </div>
+        </div>
       </div>
+
+    </slide>
+
+
+<slide>
+  <div class="text-center py-5 bg-dark text-white">
+    <h2>Second custom content</h2>
+    <div class="lead">
+      <h3>Second slide label</h3>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
     </div>
-  </slide>
-  <slide>
-    <div class="text-center py-5 bg-dark text-white">
-      <h2>Third custom content</h2>
-      <div class="lead">
-        <h3>Third slide label</h3>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum. </p>
-      </div>
+  </div>
+</slide>
+<slide>
+  <div class="text-center py-5 bg-dark text-white">
+    <h2>Third custom content</h2>
+    <div class="lead">
+      <h3>Third slide label</h3>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum. </p>
     </div>
-  </slide>
-    </carousel>
-      -->
-</div>
+  </div>
+</slide>
+  </carousel>
+    -->
