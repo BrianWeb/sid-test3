@@ -44,6 +44,7 @@ const routes: Routes = [
   //Areas:
   { path: 'areas', component: AreasComponent },
   { path: 'areas/plumber-swords', component: PlumberSwordsComponent },
+  { path: 'areas/:areaName', component: PlumberSwordsComponent },
 
   //Rates
   { path: 'emergency-plumbing-prices', component: EmergencyPlumbingPricesComponent },
@@ -64,6 +65,10 @@ const routes: Routes = [
   { path: 'blog', component: BlogComponent },
 
   { path: 'home', component: HomeComponent },
+
+  //default for empty urls
+  {
+    path: '', component: HomeComponent, pathMatch: 'full' },
 
   //catch everything other link the user may try to access:
   { path: '**', component: HomeComponent }

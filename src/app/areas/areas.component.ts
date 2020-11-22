@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+//To get URL from address bar and give it to this component
+import { ActivatedRoute } from '@angular/router';
+
 //Contentful
 import { ContentfulService } from '../contentful.service/contentful.service';
 import { Entry } from 'contentful';
@@ -17,8 +20,14 @@ export class AreasComponent implements OnInit {
   areas: Entry<any>[] = [];
   //areaNames: Entry<any>[] = [];
   //areaIntro: Entry<any>[] = [];
-  
-  constructor(private contentfulService: ContentfulService) { }
+
+  pageTitle: 'initial page title';
+
+  constructor(private contentfulService: ContentfulService,
+    private route: ActivatedRoute) { }
+
+ 
+
 
   ngOnInit() {
 
@@ -27,7 +36,12 @@ export class AreasComponent implements OnInit {
 
     this.contentfulService.getAreas()
       .then(areas => this.areas = areas)//Area Details
-      
+
+
+     //put ActivatedRoute in a local var
+    let areaName = this.route.snapshot.paramMap.get('areaName');
+
+    this.pageTitle += ` : ${areaName}`;
   }
 }
 

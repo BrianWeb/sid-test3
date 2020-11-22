@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PlumbingServicesComponent } from './plumbing-services/plumbing-services.component';
 import { HomeComponent } from './home/home.component';
-import { ServicesComponent } from './services/services.component';
 import { PlumbingServicesDublinComponent } from './services/plumbing-services-dublin/plumbing-services-dublin.component';
 import { BoilerInstallationComponent } from './services/boiler-installation/boiler-installation.component';
 import { LeakDetectionComponent } from './services/leak-detection/leak-detection.component';
@@ -20,7 +19,6 @@ import { AboutUsComponent } from './common/about-us/about-us.component';
 import { ContactDublinPlumberComponent } from './contact-dublin-plumber/contact-dublin-plumber.component';
 import { PlumberSwordsComponent } from './areas/plumber-swords/plumber-swords.component';
 import { NonEmergencyPlumbingPricesComponent } from './non-emergency-plumbing-prices/non-emergency-plumbing-prices.component';
-import { CommonComponent } from './common/common.component';
 import { FooterComponent } from './common/footer/footer.component';
 import { ContactQuoteFormComponent } from './common/contact-quote-form/contact-quote-form.component';
 import { BlogComponent } from './blog/blog.component';
@@ -46,7 +44,6 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     AppComponent,
     PlumbingServicesComponent,
     HomeComponent,
-    ServicesComponent,
     PlumbingServicesDublinComponent,
     BoilerInstallationComponent,
     LeakDetectionComponent,
@@ -61,7 +58,6 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     ContactDublinPlumberComponent,
     PlumberSwordsComponent,
     NonEmergencyPlumbingPricesComponent,
-    CommonComponent,
     FooterComponent,
     ContactQuoteFormComponent,
     BlogComponent
