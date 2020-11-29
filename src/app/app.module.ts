@@ -12,12 +12,12 @@ import { HeatingServicesComponent } from './services/heating-services/heating-se
 import { ServicesFooterComponent } from './services/common/services-footer/services-footer.component';
 import { ServicesMainComponent } from './services/common/services-main/services-main.component';
 import { ServicesSidebarComponent } from './services/common/services-sidebar/services-sidebar.component';
-import { AreasComponent } from './areas/areas.component';
+import { AreasPageComponent } from './areas-page/areas-page.component';
 import { FaqsComponent } from './faqs/faqs.component';
 import { EmergencyPlumbingPricesComponent } from './emergency-plumbing-prices/emergency-plumbing-prices.component';
 import { AboutUsComponent } from './common/about-us/about-us.component';
 import { ContactDublinPlumberComponent } from './contact-dublin-plumber/contact-dublin-plumber.component';
-import { PlumberSwordsComponent } from './areas/plumber-swords/plumber-swords.component';
+import { PlumberSwordsComponent } from './areas-page/plumber-swords/plumber-swords.component';
 import { NonEmergencyPlumbingPricesComponent } from './non-emergency-plumbing-prices/non-emergency-plumbing-prices.component';
 import { FooterComponent } from './common/footer/footer.component';
 import { ContactQuoteFormComponent } from './common/contact-quote-form/contact-quote-form.component';
@@ -37,6 +37,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 // RECOMMENDED
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { AreasSidebarComponent } from './areas-page/areas-sidebar/areas-sidebar.component';
 
 
 @NgModule({
@@ -51,7 +52,8 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     ServicesFooterComponent,
     ServicesMainComponent,
     ServicesSidebarComponent,
-    AreasComponent,
+    AreasPageComponent,
+    AreasSidebarComponent,
     FaqsComponent,
     EmergencyPlumbingPricesComponent,
     AboutUsComponent,

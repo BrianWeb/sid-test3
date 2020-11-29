@@ -53,12 +53,35 @@ export class ContentfulService {
     }, query))
       .then(res => res.items);
   }
-
+/*
+  //Areas
   getAreas(query?: object): Promise<Entry<any>[]> {
     return this.cdaClient.getEntries(Object.assign({
       content_type: CONFIG.contentTypeIds.area
     }, query))
       .then(res => res.items);
+  }
+
+  //this one is working with tags:
+  getAreasBySlug(slug: string): Promise<Entry<any>[]> {
+    return this.getAreas({ 'area.fields.slug': slug })
+      .then(items => items)
+  }
+  */
+
+  // fetch products
+  getAreas(query?: object): Promise<Entry<any>[]> {
+    return this.cdaClient.getEntries(Object.assign({
+      content_type: CONFIG.contentTypeIds.area
+    }, query))
+      .then(res => res.items);
+  }
+
+  // fetch products with a given slug
+  // and return one of them
+  getArea(slug: string): Promise<Entry<any>> {
+    return this.getAreas({ 'fields.slug': slug })
+      .then(items => items[0])
   }
 
   //SERVICES

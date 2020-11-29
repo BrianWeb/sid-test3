@@ -11,8 +11,7 @@ import { LeakDetectionComponent } from './services/leak-detection/leak-detection
 import { PlumbingServicesDublinComponent } from './services/plumbing-services-dublin/plumbing-services-dublin.component';
 
 //Areas:
-import { AreasComponent } from './areas/areas.component';  
-import { PlumberSwordsComponent } from './areas/plumber-swords/plumber-swords.component';  
+import { AreasPageComponent } from './areas-page/areas-page.component';  
 
 //Rates:
 import { EmergencyPlumbingPricesComponent } from './emergency-plumbing-prices/emergency-plumbing-prices.component';
@@ -42,9 +41,8 @@ const routes: Routes = [
   { path: 'services/heating-services', component: HeatingServicesComponent },
 
   //Areas:
-  { path: 'areas', component: AreasComponent },
-  { path: 'areas/plumber-swords', component: PlumberSwordsComponent },
-  { path: 'areas/:areaName', component: PlumberSwordsComponent },
+  { path: 'areas', component: AreasPageComponent },
+  { path: 'areas/:slug', component: AreasPageComponent },
 
   //Rates
   { path: 'emergency-plumbing-prices', component: EmergencyPlumbingPricesComponent },
