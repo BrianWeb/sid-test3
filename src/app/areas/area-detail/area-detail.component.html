@@ -1,21 +1,74 @@
 <div class="container justifyText margin-top">
   <article class="article-sm">
 
-    <div *ngIf="area">
+    <div class="row">
 
-      <div>Area Name: {{ area.fields.areaName }}</div>
-
-
-      <div class="justifyText" *ngIf="area.fields.areaMainText">
-        <div Markdown>
-          {{ area.fields.areaMainText }}
-        </div>
+      <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-3">
+        <app-areas-sidebar></app-areas-sidebar>
       </div>
 
-     
+      <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9 col-xl-9">
 
-    </div>
+        <div *ngIf="area">
 
-    </article>
+          <h2>{{ area.fields.areaHeading }}</h2>
+
+          <!--Add in this if you'd like an editable box from contenful to display the text
+    <div class="justifyText" *ngIf="area.fields.areaMainText">
+      <div Markdown>
+        {{ area.fields.areaMainText }}
+      </div>
+    </div>-->
+
+          <p>Emergency Plumber {{area.fields.areaName }}  <strong><a href="tel:+353866049361"> 086&nbsp;604&nbsp;9361</a></strong>. Are you looking for a reliable plumber in {{area.fields.areaName }}<span *ngIf="area.fields.surroundingAreas">, {{area.fields.surroundingAreas}}</span>? Well a result of it, you have found Sid’s Plumbing, an innovative Dublin Plumbing and Heating company? In the 40 years, we have been in the industry we have advised our clients to be proactive instead of being reactive to a plumbing problem.</p>
+
+          <p>If you are in the {{area.fields.areaName }} area and experience a leaking water heater or cylinder or even a toilet not flushing or a tank overflow or dripping, give us a call.</p>
+
+          <article *ngIf="area.fields.areaPhoto">
+            
+              <img src="{{area.fields.areaPhoto.fields.file.url}}" class="centerImage imagePadding">
+          </article>
+
+          <p>As a rule, a breakdown or a slowdown in water pressure may be an airlock, In addition, please view  <a routerLink="/plumbing-services" routerLinkActive="active">(click here to see what we do).</a> Here we recommend you call an experienced plumber before attempting to fix the problem yourself. Without the correct know-how and tools, your initial issue could escalate and cost you more down the line so call our plumber in {{area.fields.areaName }} today.</p>
+
+        </div>
+
+        
+
+        <article class="article-sm">
+          <h3>Why Choose Us?</h3>
+
+          <p>For more than 40 years, we have created a reputation for ourselves by undertaking efficient and timely repairs, which exceed beyond our customers’ expectations. Our  Plumbing team of highly-trained plumbers ensures that all repairs are done right with the best materials from our suppliers, <a href="http://www.davies.ie/">Davies</a>. Our business is based on customers total satisfaction since we understand the need for effectiveness and immediacy as far as handling plumbing emergencies is concerned.</p>
+
+          <p>We help our customers by phone to Identify the house valves. Particularly the mains shutoff valve which is turned (To the right). This is good to know particularly when facing a plumbing emergency because this goes a long way in protecting their property from extensive damage while the plumber is traveling to you. By virtue of being a trusted family plumber, our services are convenient, friendly, and affordable.</p>
+
+          <p>When the emergency is fixed we can scheduled a follow-up phone call at a time that is convenient for you to ensure that the repaired plumbing system is properly functioning.</p>
+
+          <p>To summarize, our friendly Plumbers in {{area.fields.areaName }} are always on ready to handle any emergencies 24/7, including on weekends and holidays.</p>
+
+          <h4>Registered business</h4>
+
+          <p>
+            As a fully registered business that can easily provide you with plumbing services, you can rely on. Above all, It’s hard finding a reliable plumber in Artane, who is professional, it isn’t going to be easy, and our team is already here to ensure that you never have to worry about issues like this.
+          </p>
+          <p>
+            Therefore if you want us to work with boilers, showers or just repair old pipes, that can do that right away. Our team has access to some of the latest technologies and tools on the market. That makes it easy for us to offer you all the tools and materials that you may need. In the end, our repairs last for a very long time and we believe you will be quite impressed with the outcome.
+          </p>
+
+          <h4>Free estimates</h4>
+
+          <p>
+            In conclusion, it’s safe to say that you do want to have a good idea of the total costs before you agree to a specific service. With this in mind our team will give you a full estimate for you to consider.
+          </p>
+
+        </article>
+
+      </div>
+
+      </div>
+
+  </article>
+
+
 </div>
 

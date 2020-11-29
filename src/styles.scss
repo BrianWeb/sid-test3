@@ -74,9 +74,13 @@ h2 {
 h3 {
   color: #006199;
   font-size: 1.3em;
+  padding-bottom: 15px;
 }
 
-
+h4 {
+  color: #007abf;
+  padding-top:10px;
+}
 
 figure {
   padding-top: 20px;
@@ -132,6 +136,7 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
 
 
 .imagePadding {
@@ -834,153 +839,12 @@ svg {
   margin-right: -15px;
 }
 /**/
-.card {
-  margin: 0 auto;
-  border: none;
-  background-color: #f5f5f5;
-}
-
-.card .carousel-item {
-  min-height: 190px;
-}
-
-.card .carousel-caption {
-  right: 15px;
-  left: 15px;
-  top: 15px;
-  color: #3d3d3d;
-  border: 1px solid #4c6b90;
-  background-color: white;
-  min-height: 160px;
-  padding: 15px;
-  text-align: left;
-}
-
-.card .carousel-caption .col-sm-3 {
-  display: flex;
-  align-items: center;
-}
-
-
-.card .carousel-control-prev, .card .carousel-control-next {
-  color: #3d3d3d !important;
-  opacity: 1 !important;
-}
-
-.carousel-control-prev-icon, .carousel-control-next-icon {
-  background-image: none;
-  color: green;
-  font-size: 14px;
-  background-color: #006199;
-  height: 32px;
-  line-height: 32px;
-  width: 32px;
-  text-decoration: none;
-}
-
-.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
-  opacity: 0.85;
-}
-
-.carousel-control-prev {
-  left: 40%;
-  top: 110%;
-}
-
-.carousel-control-next {
-  right: 40%;
-  top: 110%;
-}
-
-
-.carousel-caption h2 {
-  font-size: 14px;
-}
-
-.carousel-caption h2 span {
-  color: #cd3a54;
-}
-
-@media (min-width: 320px) and (max-width: 575px) {
-  .carousel-caption {
-    position: relative;
-  }
-
-  .card .carousel-caption {
-    left: 0;
-    top: 0;
-    margin-bottom: 15px;
-  }
-
-  .card .carousel-caption img {
-    margin: 0 auto;
-  }
-
-  .carousel-control-prev {
-    left: 35%;
-    top: 105%;
-  }
-
-  .carousel-control-next {
-    right: 35%;
-    top: 105%;
-  }
-
-  .card .carousel-caption h3 {
-    margin-top: 0;
-    font-size: 16px;
-    font-weight: 700;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 767px) {
-  .carousel-caption {
-    position: relative;
-  }
-
-  .card .carousel-caption {
-    left: 0;
-    top: 0;
-    margin-bottom: 15px;
-  }
-
-  .card .carousel-caption img {
-    margin: 0 auto;
-  }
-
-
-  .carousel-control-prev {
-    left: 35%;
-    top: 105%;
-  }
-
-  .carousel-control-next {
-    right: 35%;
-    top: 105%;
-  }
-}
-
-@media (min-width: 767px) and (max-width: 991px) {
-  .card .carousel-caption h3 {
-    margin-top: 0;
-    font-size: 16px;
-    font-weight: 700;
-  }
-}
-
-ngb-carousel .picsum-img-wrapper {
-  position: relative;
-  height: 100px;
-  padding-top: 20%; /* Keep ratio for 900x500 images */
-}
 
 
 ol li{
     display:none;
 }
-.carousel-indicators li{
-    display:none;
-}
+
 
 a {
   text-decoration: none
