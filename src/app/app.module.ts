@@ -12,12 +12,13 @@ import { HeatingServicesComponent } from './services/heating-services/heating-se
 import { ServicesFooterComponent } from './services/common/services-footer/services-footer.component';
 import { ServicesMainComponent } from './services/common/services-main/services-main.component';
 import { ServicesSidebarComponent } from './services/common/services-sidebar/services-sidebar.component';
-import { AreasPageComponent } from './areas-page/areas-page.component';
+import { AreasLandingPageComponent } from './areas/areas-landing-page/areas-landing-page.component';
+import { AreaDetailComponent } from './areas/area-detail/area-detail.component';
+import { AreasSidebarComponent } from './areas/areas-sidebar/areas-sidebar.component';
 import { FaqsComponent } from './faqs/faqs.component';
 import { EmergencyPlumbingPricesComponent } from './emergency-plumbing-prices/emergency-plumbing-prices.component';
 import { AboutUsComponent } from './common/about-us/about-us.component';
 import { ContactDublinPlumberComponent } from './contact-dublin-plumber/contact-dublin-plumber.component';
-import { PlumberSwordsComponent } from './areas-page/plumber-swords/plumber-swords.component';
 import { NonEmergencyPlumbingPricesComponent } from './non-emergency-plumbing-prices/non-emergency-plumbing-prices.component';
 import { FooterComponent } from './common/footer/footer.component';
 import { ContactQuoteFormComponent } from './common/contact-quote-form/contact-quote-form.component';
@@ -27,17 +28,11 @@ import { BlogComponent } from './blog/blog.component';
 // import the new Contentful service
 import { ContentfulService } from './contentful.service/contentful.service';
 
-
 //Markdown
 import { NgxMdModule } from 'ngx-md';
 
 //import { HttpClientModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
-
-
-// RECOMMENDED
-import { CarouselModule } from 'ngx-bootstrap/carousel';
-import { AreasSidebarComponent } from './areas-page/areas-sidebar/areas-sidebar.component';
 
 
 @NgModule({
@@ -52,17 +47,17 @@ import { AreasSidebarComponent } from './areas-page/areas-sidebar/areas-sidebar.
     ServicesFooterComponent,
     ServicesMainComponent,
     ServicesSidebarComponent,
-    AreasPageComponent,
     AreasSidebarComponent,
     FaqsComponent,
     EmergencyPlumbingPricesComponent,
     AboutUsComponent,
     ContactDublinPlumberComponent,
-    PlumberSwordsComponent,
     NonEmergencyPlumbingPricesComponent,
     FooterComponent,
     ContactQuoteFormComponent,
-    BlogComponent
+    BlogComponent,
+    AreaDetailComponent,
+    AreasLandingPageComponent
   ],
   imports: [
     BrowserModule,
@@ -70,13 +65,10 @@ import { AreasSidebarComponent } from './areas-page/areas-sidebar/areas-sidebar.
 
     //Markdown
     HttpClientModule,
-    NgxMdModule.forRoot(),
+    NgxMdModule.forRoot()
 
      //NG bootstrap
     //NgbModule,
-
-    //ngx-bootstrap
-    CarouselModule.forRoot()
     
   ],
   providers: [ContentfulService],

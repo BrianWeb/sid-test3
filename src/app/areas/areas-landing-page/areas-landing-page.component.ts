@@ -6,17 +6,16 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 
 //Contentful
-import { ContentfulService } from '../contentful.service/contentful.service';
+import { ContentfulService } from '../../contentful.service/contentful.service';
 import { Entry } from 'contentful';
 import { Variable } from '@angular/compiler/src/render3/r3_ast';
 
-
 @Component({
-  selector: 'app-areas-page',
-  templateUrl: './areas-page.component.html',
-  styleUrls: ['./areas-page.component.scss']
+  selector: 'app-areas-landing-page',
+  templateUrl: './areas-landing-page.component.html',
+  styleUrls: ['./areas-landing-page.component.scss']
 })
-export class AreasPageComponent implements OnInit {
+export class AreasLandingPageComponent implements OnInit {
 
   // define private class properties
   areasPages: Entry<any>[] = [];
@@ -31,9 +30,9 @@ export class AreasPageComponent implements OnInit {
   //constructor(private contentfulService: ContentfulService,
   //  private route: ActivatedRoute) { console.log( this.route.snapshot.paramMap.get('slug'));}
 
-   constructor(private contentfulService: ContentfulService,
-     private router: Router,
-     private route: ActivatedRoute) { }
+  constructor(private contentfulService: ContentfulService,
+    private router: Router,
+    private route: ActivatedRoute) { }
 
 
 
@@ -46,19 +45,19 @@ export class AreasPageComponent implements OnInit {
       this.route.paramMap
         .pipe(switchMap((params: ParamMap) => this.contentfulService.getArea(params.get('slug'))))
         .subscribe(area => this.area = area);
-    }
+  }
 
 
-   // this.contentfulService.getAreas()
-   //   .then(areas => this.areas = areas);//Area Details
+  // this.contentfulService.getAreas()
+  //   .then(areas => this.areas = areas);//Area Details
 
 
-     //put ActivatedRoute in a local var
-    //let routeParameterVar = this.route.snapshot.paramMap.get('areaName');
+  //put ActivatedRoute in a local var
+  //let routeParameterVar = this.route.snapshot.paramMap.get('areaName');
 
   //  let slugVar = this.route.snapshot.paramMap.get('slug'); //'slug' comes from the routes.modeule
   //  console.log('slugVar = ' + slugVar);
-    //this.pageTitle += ` : ${routeParameterVar}`;
+  //this.pageTitle += ` : ${routeParameterVar}`;
   //}
 }
 

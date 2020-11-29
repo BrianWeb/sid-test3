@@ -1,0 +1,21 @@
+<div class="container justifyText margin-top">
+  <article class="article-sm">
+
+    <div *ngIf="area">
+
+      <div>Area Name: {{ area.fields.areaName }}</div>
+
+
+      <div class="justifyText" *ngIf="area.fields.areaMainText">
+        <div Markdown>
+          {{ area.fields.areaMainText }}
+        </div>
+      </div>
+
+     
+
+    </div>
+
+    </article>
+</div>
+
