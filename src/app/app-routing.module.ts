@@ -5,13 +5,13 @@ import { HomeComponent } from './home/home.component';
 
 //Services:
 import { PlumbingServicesComponent } from './plumbing-services/plumbing-services.component';
-import { BoilerInstallationComponent } from './services/boiler-installation/boiler-installation.component';
-import { HeatingServicesComponent } from './services/heating-services/heating-services.component';
-import { LeakDetectionComponent } from './services/leak-detection/leak-detection.component';
-import { PlumbingServicesDublinComponent } from './services/plumbing-services-dublin/plumbing-services-dublin.component';
+import { BoilerInstallationComponent } from './plumbing-services/boiler-installation/boiler-installation.component';
+import { HeatingServicesComponent } from './plumbing-services/heating-services/heating-services.component';
+import { LeakDetectionComponent } from './plumbing-services/leak-detection/leak-detection.component';
+import { PlumbingServicesDublinComponent } from './plumbing-services/plumbing-services-dublin/plumbing-services-dublin.component';
 
 //Areas:
-import { AreasLandingPageComponent } from './areas/areas-landing-page/areas-landing-page.component';  
+import { AreasComponent } from './areas/areas.component';  
 import { AreaDetailComponent } from './areas/area-detail/area-detail.component';
 
 //Rates:
@@ -30,6 +30,8 @@ import { FaqsComponent } from './faqs/faqs.component';
 //BLOG:
 import { BlogComponent } from './blog/blog.component';
 
+//Book Appointment
+import { BookAppointmentComponent } from './book-appointment/book-appointment.component';
 
 
 const routes: Routes = [
@@ -42,7 +44,7 @@ const routes: Routes = [
   { path: 'services/heating-services', component: HeatingServicesComponent },
 
   //Areas:
-  { path: 'areas', component: AreasLandingPageComponent },
+  { path: 'areas', component: AreasComponent },
   { path: 'areas/:slug', component: AreaDetailComponent },
 
   //Rates
@@ -63,7 +65,13 @@ const routes: Routes = [
   //BLOG
   { path: 'blog', component: BlogComponent },
 
+  //Book Appointment
+  { path: 'appointment', component: BookAppointmentComponent},
+
   { path: 'home', component: HomeComponent },
+
+
+
 
   //default for empty urls
   {

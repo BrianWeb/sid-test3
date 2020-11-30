@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ServicesMainComponent } from '../services/common/services-main/services-main.component';
 
 @Component({
   selector: 'app-plumbing-services',

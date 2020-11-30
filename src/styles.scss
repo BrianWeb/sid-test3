@@ -147,6 +147,9 @@ img {
   text-align: justify;
 }
 
+.sidebar{
+    padding-bottom:40px;
+}
 @media only screen and (min-width:992px) {
   .customContainer {
     padding-left: 6%;
@@ -463,6 +466,8 @@ img {
   font-size: 2.2em;
 }
 /*-----------/Contact Columns-------------------*/
+
+
 /*----------Standard Horizontal NAV BAR -------------*/
 @media only screen and (max-width:768px) {
   div.scrollmenu {
@@ -485,7 +490,7 @@ div.scrollmenu a {
   text-decoration: none;
   display: inline-block;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.8em;
   color: white;
   padding-left: 3%;
   padding-right: 3%;
@@ -729,19 +734,23 @@ a:focus {
 }
 
 
-.productSvgAndHeader, .viewAllProductsLink {
-  //background-color: #499933;
-  //color: white;
-  color: #4c6b90;
+.productSvgAndHeader, .defaultButton {
+  font: 1.2em;
   margin-top: 1.1em;
   margin-bottom: 1.1em;
-  padding-top: 1em;
-  padding-bottom: 1.2em;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
+  text-align: center;
 }
 
-.viewAllProductsLink a {
+.defaultButton {
+  background-color: #006199;
+  color: white; /*Boostrap override*/
+}
+
+.defaultButton a {
   color: white; /*Boostrap override*/
 }
 //

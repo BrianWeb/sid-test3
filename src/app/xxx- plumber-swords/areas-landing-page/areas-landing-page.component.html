@@ -1,4 +1,4 @@
-<div class="container justifyText margin-top">
+<div class="container  margin-top">
   <article class="article-sm">
 
     <div class="row">
@@ -11,14 +11,15 @@
 
         <ul>
           <li *ngFor="let areasPage of areasPages">
-            <div Markdown>
+            <div Markdown class="justifyText">
               {{ areasPage.fields.areasPageIntroTextField}}
             </div>
           </li>
         </ul>
 
         <article class="article-sm">
-          <h2>Includes Dublin Area Codes: 1,3,5,7,9,11,13,15,17 & The North County</h2>
+          <h4>Includes Dublin Area Codes: 1,3,5,7,9,11,13,15,17 & The North County</h4>
+          <br/>
           <div class="googleMap">
 
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2376.1273073245507!2d-6.239195748850497!3d53.448310479902325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48671233aa868d7d%3A0xff101b0a845c0334!2sSids%20Plumbing%20Swords%20Dublin!5e0!3m2!1sen!2sie!4v1603025361989!5m2!1sen!2sie" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>

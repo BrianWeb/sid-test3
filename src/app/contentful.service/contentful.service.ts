@@ -72,10 +72,12 @@ export class ContentfulService {
   // fetch products
   getAreas(query?: object): Promise<Entry<any>[]> {
     return this.cdaClient.getEntries(Object.assign({
-      content_type: CONFIG.contentTypeIds.area
+      content_type: CONFIG.contentTypeIds.area,
+      order: 'fields.id'
     }, query))
       .then(res => res.items);
   }
+
 
   // fetch products with a given slug
   // and return one of them

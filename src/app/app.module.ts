@@ -2,19 +2,27 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+
 import { AppComponent } from './app.component';
-import { PlumbingServicesComponent } from './plumbing-services/plumbing-services.component';
+
 import { HomeComponent } from './home/home.component';
-import { PlumbingServicesDublinComponent } from './services/plumbing-services-dublin/plumbing-services-dublin.component';
-import { BoilerInstallationComponent } from './services/boiler-installation/boiler-installation.component';
-import { LeakDetectionComponent } from './services/leak-detection/leak-detection.component';
-import { HeatingServicesComponent } from './services/heating-services/heating-services.component';
-import { ServicesFooterComponent } from './services/common/services-footer/services-footer.component';
-import { ServicesMainComponent } from './services/common/services-main/services-main.component';
-import { ServicesSidebarComponent } from './services/common/services-sidebar/services-sidebar.component';
-import { AreasLandingPageComponent } from './areas/areas-landing-page/areas-landing-page.component';
+
+import { PlumbingServicesComponent } from './plumbing-services/plumbing-services.component';
+import { PlumbingServicesDublinComponent } from './plumbing-services/plumbing-services-dublin/plumbing-services-dublin.component';
+import { BoilerInstallationComponent } from './plumbing-services/boiler-installation/boiler-installation.component';
+import { LeakDetectionComponent } from './plumbing-services/leak-detection/leak-detection.component';
+import { HeatingServicesComponent } from './plumbing-services/heating-services/heating-services.component';
+import { ServicesFooterComponent } from './plumbing-services/common/services-footer/services-footer.component';
+import { ServicesMainComponent } from './plumbing-services/common/services-main/services-main.component';
+import { ServicesSidebarComponent } from './plumbing-services/common/services-sidebar/services-sidebar.component';
+
+import { AreasComponent } from './areas/areas.component';
 import { AreaDetailComponent } from './areas/area-detail/area-detail.component';
 import { AreasSidebarComponent } from './areas/areas-sidebar/areas-sidebar.component';
+
 import { FaqsComponent } from './faqs/faqs.component';
 import { EmergencyPlumbingPricesComponent } from './emergency-plumbing-prices/emergency-plumbing-prices.component';
 import { AboutUsComponent } from './common/about-us/about-us.component';
@@ -28,11 +36,15 @@ import { BlogComponent } from './blog/blog.component';
 // import the new Contentful service
 import { ContentfulService } from './contentful.service/contentful.service';
 
+import { ContactService } from './common/contact.service';
+
 //Markdown
 import { NgxMdModule } from 'ngx-md';
 
 //import { HttpClientModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { BookAppointmentComponent } from './book-appointment/book-appointment.component';
+
 
 
 @NgModule({
@@ -57,21 +69,23 @@ import { HttpClientModule } from '@angular/common/http';
     ContactQuoteFormComponent,
     BlogComponent,
     AreaDetailComponent,
-    AreasLandingPageComponent
+    AreasComponent,
+    BookAppointmentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
 
     //Markdown
-    HttpClientModule,
     NgxMdModule.forRoot()
 
-     //NG bootstrap
-    //NgbModule,
+
     
   ],
-  providers: [ContentfulService],
+  providers: [ContentfulService, ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
