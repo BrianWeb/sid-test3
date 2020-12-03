@@ -29,7 +29,7 @@
 
 
 
-<div class="container justifyText margin-top">
+<div class="container  margin-top">
   <article class="article-sm">
 
     <div class="row">
@@ -51,17 +51,18 @@
             </div>
           </div>-->
 
-          <p>Emergency Plumber {{area.fields.areaName }}  <strong><a href="tel:+353866049361"> 086&nbsp;604&nbsp;9361</a></strong>. Are you looking for a reliable plumber in {{area.fields.areaName }}<span *ngIf="area.fields.surroundingAreas">, {{area.fields.surroundingAreas}}</span>? Well a result of it, you have found Sid’s Plumbing, an innovative Dublin Plumbing and Heating company? In the 40 years, we have been in the industry we have advised our clients to be proactive instead of being reactive to a plumbing problem.</p>
+          <div class="justifyText">
+            <p>Emergency Plumber {{area.fields.areaName }}  <strong><a href="tel:+353866049361"> 086&nbsp;604&nbsp;9361</a></strong>. Are you looking for a reliable plumber in {{area.fields.areaName }}<span *ngIf="area.fields.surroundingAreas">, {{area.fields.surroundingAreas}}</span>? Well a result of it, you have found Sid’s Plumbing, an innovative Dublin Plumbing and Heating company? In the 40 years, we have been in the industry we have advised our clients to be proactive instead of being reactive to a plumbing problem.</p>
 
-          <p>If you are in the {{area.fields.areaName }} area and experience a leaking water heater or cylinder or even a toilet not flushing or a tank overflow or dripping, give us a call.</p>
+            <p>If you are in the {{area.fields.areaName }} area and experience a leaking water heater or cylinder or even a toilet not flushing or a tank overflow or dripping, give us a call.</p>
 
-          <article *ngIf="area.fields.areaPhoto">
+            <article *ngIf="area.fields.areaPhoto">
 
-            <img src="{{area.fields.areaPhoto.fields.file.url}}" class="centerImage imagePadding">
-          </article>
+              <img src="{{area.fields.areaPhoto.fields.file.url}}" class="centerImage imagePadding">
+            </article>
 
-          <p>As a rule, a breakdown or a slowdown in water pressure may be an airlock, In addition, please view  <a routerLink="/plumbing-services" routerLinkActive="active">(click here to see what we do).</a> Here we recommend you call an experienced plumber before attempting to fix the problem yourself. Without the correct know-how and tools, your initial issue could escalate and cost you more down the line so call our plumber in {{area.fields.areaName }} today.</p>
-
+            <p>As a rule, a breakdown or a slowdown in water pressure may be an airlock, In addition, please view  <a routerLink="/plumbing-services" routerLinkActive="active">(click here to see what we do).</a> Here we recommend you call an experienced plumber before attempting to fix the problem yourself. Without the correct know-how and tools, your initial issue could escalate and cost you more down the line so call our plumber in {{area.fields.areaName }} today.</p>
+          </div>
         </div>
 
 
