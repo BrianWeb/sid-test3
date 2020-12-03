@@ -21,8 +21,11 @@ export class BookAppointmentComponent implements OnInit {
 
     this.FormData = this.builder.group({
       Fullname: new FormControl('', [Validators.required]),
+     // Number: new FormControl('', [Validators.required]),
       Email: new FormControl('', [Validators.compose([Validators.required, Validators.email])]),
-      Comment: new FormControl('', [Validators.required])
+      Comment: new FormControl('', [Validators.required]),
+      Phone: new FormControl('', [Validators.required])
+
     })
   }
 
