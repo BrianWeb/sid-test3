@@ -27,7 +27,8 @@
               "src/favicon.ico",
               "src/assets",
               "src/_redirects",
-              "src/netlify.toml"
+              "src/netlify.toml",
+              "/netlify.toml"
             ],
             "styles": [
               "src/styles.scss"
