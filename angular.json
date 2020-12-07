@@ -27,7 +27,6 @@
               "src/favicon.ico",
               "src/assets",
               "src/_redirects",
-              "src/netlify.toml",
               "src/sitemap.xml",
               "src/sitemap.json"
             ],
