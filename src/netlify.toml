@@ -1,5 +1,4 @@
-[[plugins]]
-package = "@netlify/plugin-sitemap"
+
 
   [plugins.inputs]
   buildDir = "dist/app"
