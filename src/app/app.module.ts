@@ -43,6 +43,7 @@ import { NgxMdModule } from 'ngx-md';
 
 //import { HttpClientModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+
 import { BookAppointmentComponent } from './book-appointment/book-appointment.component';
 
 

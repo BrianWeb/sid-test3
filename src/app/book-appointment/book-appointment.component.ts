@@ -12,13 +12,13 @@ import { ContactService } from '../common/contact.service';
 })
 
 export class BookAppointmentComponent implements OnInit {
-
+  
   FormData: FormGroup;
 
   constructor(private builder: FormBuilder, private contact: ContactService) { }
 
   ngOnInit(): void {
-
+  
     this.FormData = this.builder.group({
       Fullname: new FormControl('', [Validators.required]),
      // Number: new FormControl('', [Validators.required]),
