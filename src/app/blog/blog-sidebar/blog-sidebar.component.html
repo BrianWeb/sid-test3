@@ -2,17 +2,14 @@
 
 
   <div class="row">
-    <ul class="inlineBlockUl">
-      <li *ngFor="let blogPost of blogPosts">
-          <div class="inlineBlockNavItem">
-            <a routerLink="/blog/{{ blogPost.fields.slug | lowercase}}" routerLinkActive="active">
-              <h4>{{ blogPost.fields.blogPostTitle}}</h4>
-            </a>
-          </div>  
-      </li>
 
-    </ul>
+    <div *ngFor="let blogPost of blogPosts" class="col-12   col-sm-12   col-md-6   col-lg-4  col-xl-4">
+      <div class="customNavItem">
+        <a routerLink="/blog/{{ blogPost.fields.slug | lowercase}}" routerLinkActive="active">
+          <h4>{{ blogPost.fields.blogPostTitle}}</h4>
+        </a>
+      </div>
+    </div>
   </div>
 
 </article>
-
