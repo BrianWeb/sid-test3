@@ -1,3 +1,38 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$sid-app2-primary: mat-palette($mat-indigo);
+$sid-app2-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$sid-app2-warn: mat-palette($mat-red);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$sid-app2-theme: mat-light-theme((
+  color: (
+    primary: $sid-app2-primary,
+    accent: $sid-app2-accent,
+    warn: $sid-app2-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($sid-app2-theme);
+
 /* You can add global styles to this file, and also import other style files */
 
 body {
@@ -62,24 +97,32 @@ ul {
   padding: 0;
 }
 
-
+h1 {
+  color: #006199;
+  font-size: 3em;
+  font-weight: 200;
+  padding-bottom: 25px;
+}
 
 h2 {
-  color: #4c6b90;
+  color: #006199;
+  font-size: 1.5em;
   padding-bottom: 20px;
 }
 
 
-
 h3 {
-  color: #006199;
+  color: #4c6b90;
   font-size: 1.3em;
   padding-bottom: 15px;
 }
 
 h4 {
-  color: #007abf;
-  padding-top:10px;
+  color: #4c6b90;
+  padding-top: 10px;
+  font-weight:400;
+  font-size:1.2em;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 figure {
@@ -90,6 +133,27 @@ figure {
 img {
   max-width: 100%;
 }
+
+
+@media only screen and (max-width:992px) {
+  .textWrap {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width:993px) {
+  .textWrap {
+    float: right;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    max-width: 320px;
+  }
+}
+
 
 .article-lg {
   // background-color: whitesmoke;
@@ -137,7 +201,9 @@ img {
   margin-right: auto;
 }
 
+.verticalNavItem{
 
+}
 
 .imagePadding {
   padding: 40px;
@@ -147,9 +213,7 @@ img {
   text-align: justify;
 }
 
-.sidebar{
-    padding-bottom:40px;
-}
+
 @media only screen and (min-width:992px) {
   .customContainer {
     padding-left: 6%;
@@ -180,6 +244,7 @@ img {
 .em1-4 {
   font-size: 1.4em;
 }
+
 .fa-star {
   color: #ffcc00;
 }
@@ -187,13 +252,11 @@ img {
 .googleReviewStars .fa-star {
   padding-right: 5px;
 }
-
 /*
 .googleReviewStars .fa-star:last-of-type {
   padding-right: 10px;
 
 }*/
-
 .googleReviewStars {
   a {
     color: #e6ffff;
@@ -304,8 +367,9 @@ img {
 }
 
 .fa-wrench {
-  color:#ff9900 ;
+  color: #ff9900;
 }
+
 .fa-thermometer-4 {
   color: #ff4800;
 }
@@ -321,7 +385,7 @@ img {
 }
 
 .contactCol .phoneNo {
- // font-size: 1.6em;
+  // font-size: 1.6em;
 }
 
 @media only screen and (min-width:767px) {
@@ -336,13 +400,11 @@ img {
   }
 }
 
-@media only screen and (min-width:768px)  {
+@media only screen and (min-width:768px) {
   .hiddenOnMediumScreens {
     display: none;
   }
 }
-
-
 /*
 .callUsCol {
   line-height: 50px;
@@ -466,8 +528,6 @@ img {
   font-size: 2.2em;
 }
 /*-----------/Contact Columns-------------------*/
-
-
 /*----------Standard Horizontal NAV BAR -------------*/
 @media only screen and (max-width:768px) {
   div.scrollmenu {
@@ -526,8 +586,6 @@ div.scrollmenu a:visited {
   */
 /* border under links on hover */
 /*-------/Nav Bar-----------*/
-
-
 /*Overlay NAV BAR*/
 @media only screen and (min-width:778px) {
   #burgerBar {
@@ -544,13 +602,13 @@ div.scrollmenu a:visited {
   cursor: pointer;
   color: white;
 }
-#burgerBarIcon{
-    color:white;
+
+#burgerBarIcon {
+  color: white;
 }
 
 ;
-/* -- Pop out Menu from https://www.w3schools.com/howto/howto_js_sidenav.asp*/ 
-
+/* -- Pop out Menu from https://www.w3schools.com/howto/howto_js_sidenav.asp*/
 /* The side navigation menu */
 .sidenav {
   height: 100%; /* 100% Full-height */
@@ -564,7 +622,6 @@ div.scrollmenu a:visited {
   padding-top: 50px; /* Place content 50px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
-
 /* The navigation menu links */
 .sidenav a {
   padding: 8px 8px 8px 32px;
@@ -574,13 +631,11 @@ div.scrollmenu a:visited {
   display: block;
   transition: 0.3s;
 }
-
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #b3e6ff;
   text-decoration: none;
 }
-
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
   position: absolute;
@@ -589,13 +644,11 @@ div.scrollmenu a:visited {
   font-size: 40px;
   margin-left: 50px;
 }
-
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left .5s;
   padding: 20px;
 }
-
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidenav {
@@ -699,12 +752,9 @@ div.scrollmenu a:visited {
   padding: 20px;
 }
 /*--- /Quote Form*/
-
-
 #referrals {
   padding-bottom: 80px;
 }
-
 /*--Services*/
 serviceImage {
   background-color: white;
@@ -720,15 +770,15 @@ serviceImage {
 }
 
 
+a:hover {
+  text-decoration: none;
+}
+
 a:link {
   text-decoration: none;
 }
 
 a:visited {
-  text-decoration: none;
-}
-
-a:hover {
   text-decoration: none;
 }
 
@@ -816,7 +866,6 @@ svg {
   color: #006ba1;
 }
 /* ----/Services -----*/
-
 #callUsBanner {
   background-color: #007abf;
   color: white;
@@ -824,10 +873,9 @@ svg {
   margin-right: -15px;
 }
 
-#callUsBanner a{ 
+#callUsBanner a {
   color: white;
 }
-
 /*------ Google Map*/
 #findUs {
   padding-bottom: 60px;
@@ -850,7 +898,6 @@ svg {
   height: 100% !important;
 }
 /* ----- /Google Map*/
-
 /* ---- Referrals ------*/
 #referrals {
   background-color: #f5f5f5;
@@ -858,10 +905,8 @@ svg {
   margin-right: -15px;
 }
 /**/
-
-
-ol li{
-    display:none;
+ol li {
+  display: none;
 }
 
 
@@ -893,6 +938,8 @@ a {
     color: #00aaff;
   }
 }
-
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

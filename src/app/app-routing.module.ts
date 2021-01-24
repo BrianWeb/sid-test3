@@ -29,6 +29,8 @@ import { FaqsComponent } from './faqs/faqs.component';
 
 //BLOG:
 import { BlogComponent } from './blog/blog.component';
+import { BlogPostComponent } from './blog/blog-post/blog-post.component';
+
 
 //Book Appointment
 import { BookAppointmentComponent } from './book-appointment/book-appointment.component';
@@ -64,6 +66,7 @@ const routes: Routes = [
 
   //BLOG
   { path: 'blog', component: BlogComponent },
+  { path: 'blog/:slug', component: BlogPostComponent },
 
   //Book Appointment
   { path: 'appointment', component: BookAppointmentComponent},

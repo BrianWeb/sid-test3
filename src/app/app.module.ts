@@ -45,6 +45,9 @@ import { NgxMdModule } from 'ngx-md';
 import { HttpClientModule } from '@angular/common/http';
 
 import { BookAppointmentComponent } from './book-appointment/book-appointment.component';
+import { BlogPostComponent } from './blog/blog-post/blog-post.component';
+import { BlogSidebarComponent } from './blog/blog-sidebar/blog-sidebar.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -71,7 +74,9 @@ import { BookAppointmentComponent } from './book-appointment/book-appointment.co
     BlogComponent,
     AreaDetailComponent,
     AreasComponent,
-    BookAppointmentComponent
+    BookAppointmentComponent,
+    BlogPostComponent,
+    BlogSidebarComponent
   ],
   imports: [
     BrowserModule,
@@ -81,7 +86,9 @@ import { BookAppointmentComponent } from './book-appointment/book-appointment.co
     HttpClientModule,
 
     //Markdown
-    NgxMdModule.forRoot()
+    NgxMdModule.forRoot(),
+
+    NoopAnimationsModule
 
 
     

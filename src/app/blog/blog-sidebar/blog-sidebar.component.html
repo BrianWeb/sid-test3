@@ -1,0 +1,18 @@
+<article class="sidebar">
+
+
+  <div class="row">
+    <ul class="inlineBlockUl">
+      <li *ngFor="let blogPost of blogPosts">
+          <div class="inlineBlockNavItem">
+            <a routerLink="/blog/{{ blogPost.fields.slug | lowercase}}" routerLinkActive="active">
+              <h4>{{ blogPost.fields.blogPostTitle}}</h4>
+            </a>
+          </div>  
+      </li>
+
+    </ul>
+  </div>
+
+</article>
+

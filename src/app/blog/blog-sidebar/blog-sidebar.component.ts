@@ -1,17 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 //Contentful
-import { ContentfulService } from '../contentful.service/contentful.service';
+import { ContentfulService } from '../../contentful.service/contentful.service';
 import { Entry } from 'contentful';
 
-
 @Component({
-  selector: 'app-blog',
-  templateUrl: './blog.component.html',
-  styleUrls: ['./blog.component.scss']
+  selector: 'app-blog-sidebar',
+  templateUrl: './blog-sidebar.component.html',
+  styleUrls: ['./blog-sidebar.component.scss']
 })
-export class BlogComponent implements OnInit {
-
+export class BlogSidebarComponent implements OnInit {
 
   // define private class properties
   blogPosts: Entry<any>[] = [];
@@ -25,3 +23,9 @@ export class BlogComponent implements OnInit {
   }
 
 }
+
+
+
+
+
+

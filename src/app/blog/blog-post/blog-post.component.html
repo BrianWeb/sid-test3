@@ -1,0 +1,37 @@
+  <div class="container  margin-top">
+
+  <app-blog-sidebar></app-blog-sidebar>
+
+  <div class="row">
+
+
+
+    <article class="article-sm">
+
+      <div *ngIf="blogPost">
+
+
+        <h1>{{ blogPost.fields.blogPostTitle}}</h1>
+
+
+        <img src="{{ blogPost.fields.blogPostImage.fields.file.url }}" id="leaking-tap" class="textWrap">
+
+        <div Markdown>
+
+          {{ blogPost.fields.blogPostText}}
+
+        </div>
+
+
+
+
+
+      </div>
+
+
+    </article>
+
+
+  </div>
+</div>
+
