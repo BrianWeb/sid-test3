@@ -1,4 +1,4 @@
-  <div class="container  margin-top">
+<div class="container  margin-top">
 
   <app-blog-sidebar></app-blog-sidebar>
 
@@ -16,15 +16,8 @@
 
         <img src="{{ blogPost.fields.blogPostImage.fields.file.url }}" id="leaking-tap" class="textWrap">
 
-        <div Markdown>
-
-          {{ blogPost.fields.blogPostText}}
-
-        </div>
-
-
-
-
+        <br/>
+        <showdown smartIndentationFix [value]="blogPostText"></showdown>
 
       </div>
 
@@ -33,5 +26,5 @@
 
 
   </div>
-</div>
 
+</div>

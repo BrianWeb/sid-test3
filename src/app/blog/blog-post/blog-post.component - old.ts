@@ -18,19 +18,16 @@ import { Variable } from '@angular/compiler/src/render3/r3_ast';
 export class BlogPostComponent implements OnInit {
 
   blogPost: Entry<any>;
-  blogPostText: string;
-
+  blogPostMarkdown: string;
 
   constructor(private contentfulService: ContentfulService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.route.paramMap
       .pipe(switchMap((params: ParamMap) => this.contentfulService.getBlogPost(params.get('slug'))))
-      .subscribe(blogPost => {
-        this.blogPost = blogPost;
-        this.blogPostText = blogPost.fields.blogPostText;
-      }
-      );
+      .subscribe(blogPost => this.blogPost = blogPost,
+        blogPostMarkdown => this.blogPost.fields.blogPostText);
+
 
   }
 }

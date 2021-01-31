@@ -39,7 +39,12 @@ import { ContentfulService } from './contentful.service/contentful.service';
 import { ContactService } from './common/contact.service';
 
 //Markdown
-import { NgxMdModule } from 'ngx-md';
+//import { NgxMdModule } from 'ngx-md';
+
+
+//Showdown Markdown
+import { ShowdownModule } from 'ngx-showdown';
+
 
 //import { HttpClientModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
@@ -86,7 +91,10 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
 
     //Markdown
-    NgxMdModule.forRoot(),
+    //NgxMdModule.forRoot(),
+
+    //showdown Markdown
+    ShowdownModule,
 
     NoopAnimationsModule
 
