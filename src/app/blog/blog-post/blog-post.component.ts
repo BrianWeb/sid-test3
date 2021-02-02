@@ -3,12 +3,12 @@ import { switchMap } from 'rxjs/operators';
 import { Component, OnInit } from '@angular/core';
 
 //To get URL from address bar and give it to this component
-import { ActivatedRoute, ParamMap, Router } from '@angular/router';
+import { ActivatedRoute, ParamMap } from '@angular/router';
 
 //Contentful
 import { ContentfulService } from '../../contentful.service/contentful.service';
 import { Entry } from 'contentful';
-import { Variable } from '@angular/compiler/src/render3/r3_ast';
+
 
 @Component({
   selector: 'app-blog-post',
