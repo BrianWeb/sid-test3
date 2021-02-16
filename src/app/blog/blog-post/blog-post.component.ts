@@ -19,6 +19,7 @@ export class BlogPostComponent implements OnInit {
 
   blogPost: Entry<any>;
   blogPostText: string;
+  blogPostVideos: any[] = [];
 
 
   constructor(private contentfulService: ContentfulService, private route: ActivatedRoute) { }
@@ -29,8 +30,19 @@ export class BlogPostComponent implements OnInit {
       .subscribe(blogPost => {
         this.blogPost = blogPost;
         this.blogPostText = blogPost.fields.blogPostText;
+        this.blogPostVideos = blogPost.fields.blogPostVideo;
+        
       }
       );
 
   }
+  /*
+  getVideos() {
+    let newArrayVideoUrls = this.blogPostVideos.map(function (extractArrayVideoUrls) {
+        return extractArrayVideoUrls.fields.file.url;
+      })
+    let newArrayVideoTitles = this.blogPostVideos.map(function (extractArrayVideoTitles) {
+        return extractArrayVideoTitles.fields.title;
+      })
+  }*/
 }

@@ -4,8 +4,6 @@
 
   <div class="row">
 
-
-
     <article class="article-sm">
 
       <div *ngIf="blogPost">
@@ -16,8 +14,16 @@
 
         <img src="{{ blogPost.fields.blogPostImage.fields.file.url }}" id="leaking-tap" class="textWrap">
 
-        <br/>
+        <br />
         <showdown smartIndentationFix [value]="blogPostText"></showdown>
+
+
+        <div *ngIf="blogPostVideos">
+          <video controls>
+            <source [src]="blogPost.fields.blogPostVideo.fields.file.url" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
 
       </div>
 
