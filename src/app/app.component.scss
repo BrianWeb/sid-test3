@@ -1,0 +1,204 @@
+
+
+#top_section {
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+@media only screen and (max-width:768px) {
+  #logoCol {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  #logoImage {
+    float: right;
+  }
+}
+
+#logoImage {
+  max-width: 56px;
+  padding-top: 10px;
+  padding-right: 5px;
+  float: left;
+}
+
+#logoWithCompanyName {
+  max-width: 340px;
+  padding-top: 10px;
+  padding-right: 5px;
+  float: left;
+}
+
+#company_name {
+  font-family: upbolters;
+  font-size: 2.5em;
+  // color: #003d99;
+  color: #002d64;
+}
+
+#company_name_sub_text {
+  font-size: 1.3em;
+  //color: #008020; nice green
+  color: #006ba1;
+  margin-top: -10px;
+}
+
+
+
+/*-----------Contact Columns-------------------*/
+.contactCol {
+  line-height: 45px;
+  font-size: 1.5em;
+  /*nice orange background-color: #E62E00;*/
+  //display: flex;
+  text-align: center;
+  font-weight: 500;
+}
+
+.contactCol .phoneNo {
+  // font-size: 1.6em;
+}
+
+@media only screen and (min-width:767px) {
+  .contactCol {
+    text-align: right;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .contactCol {
+    background-color: lightgray;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .hiddenOnMediumScreens {
+    display: none;
+  }
+}
+/*
+.callUsCol {
+  line-height: 50px;
+  font-size: 1.1em;
+  /*nice orange background-color: #E62E00;
+  //display: flex;
+  text-align: center;
+  // color: #f05118;
+  color: #4c6b90;
+  font-weight: 600;
+}
+
+
+
+@media only screen and (min-width:768px) {
+  .callUsCol {
+    text-align: right;
+  }
+}
+*/
+#callUsColText {
+  display: inline-block;
+  color: #4c6b90;
+  padding-right: 10px;
+}
+
+@media only screen and (min-width:770px) and (max-width:870px) {
+  #callUsColText {
+    display: none;
+  }
+}
+
+
+
+
+@media only screen and (max-width:768px) {
+
+  .customMargin {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+}
+
+
+
+
+.contactCol,
+.contactCol a,
+.contactCol a:link,
+.contactCol a:active,
+.contactCol a:hover,
+.contactCol a:visited {
+  text-decoration: none;
+  //color: #006ba1;
+  color: #006ba1;
+}
+
+#whatsapp {
+  color: #00b33c;
+}
+
+.menuLevel2:hover,
+.menuLevel2:link,
+.menuLevel2:active,
+.menuLevel2:hover,
+.menuLevel2:visited {
+  background-color: #C2CEDA;
+}
+
+
+@media only screen and (max-width:767px) {
+  .contactCol {
+    margin-bottom: 2px;
+    background-color: #E8ECF1;
+  }
+  /*
+    #contactCol1 {
+        border-bottom: 4px solid white;
+        border-left: 4px solid white;
+        border-right: 2px solid white;
+    }
+    #contactCol2 {
+        border-bottom: 4px solid white;
+        border-right: 4px solid white;
+        border-left: 2px solid white;
+    }*/
+}
+
+
+
+.contactCol:hover {
+  transition: .3s background-color;
+  color: #006747;
+}
+/*
+.contactText {
+  font-weight: 600;
+  font-size: 1.1em;
+}*/
+.contactText,
+.keyHeader
+ {
+  font-family: roboto-condensed-light, Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+}
+
+@media only screen and (max-width:200px) {
+  .contactText,
+  .thumbnailDescription {
+    display: none;
+  }
+  /*.col-xs-1 .col-xs-2 .col-xs-3 .col-xs-4 .col-xs-5 .col-xs-6 .col-xs-7 .col-xs-8 .col-xs-9 .col-xs-10 .col-xs-11 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }*/
+}
+
+.icon_sosa {
+  vertical-align: middle;
+  font-size: 2.2em;
+}
+/*-----------/Contact Columns-------------------*/

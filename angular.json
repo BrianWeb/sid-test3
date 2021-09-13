@@ -32,6 +32,7 @@
               "src/sitemap_index.xml"
             ],
             "styles": [
+              "src/assets/vendors/bootstrap.min.css",
               "src/styles.scss"
             ],
             "scripts": [],

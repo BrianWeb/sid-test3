@@ -303,53 +303,6 @@ video {
 }
 
 
-
-#top_section {
-  background-color: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-
-@media only screen and (max-width:768px) {
-  #logoCol {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  #logoImage {
-    float: right;
-  }
-}
-
-#logoImage {
-  max-width: 56px;
-  padding-top: 10px;
-  padding-right: 5px;
-  float: left;
-}
-
-#logoWithCompanyName {
-  max-width: 340px;
-  padding-top: 10px;
-  padding-right: 5px;
-  float: left;
-}
-
-#company_name {
-  font-family: upbolters;
-  font-size: 2.5em;
-  // color: #003d99;
-  color: #002d64;
-}
-
-#company_name_sub_text {
-  font-size: 1.3em;
-  //color: #008020; nice green
-  color: #006ba1;
-  margin-top: -10px;
-}
-
 #sidNoBackgroundSmall {
   max-width: 300px;
   display: block;
@@ -377,160 +330,9 @@ video {
   color: #ff4800;
 }
 /* --- Icons */
-/*-----------Contact Columns-------------------*/
-.contactCol {
-  line-height: 45px;
-  font-size: 1.5em;
-  /*nice orange background-color: #E62E00;*/
-  //display: flex;
-  text-align: center;
-  font-weight: 500;
-}
-
-.contactCol .phoneNo {
-  // font-size: 1.6em;
-}
-
-@media only screen and (min-width:767px) {
-  .contactCol {
-    text-align: right;
-  }
-}
-
-@media only screen and (max-width:768px) {
-  .contactCol {
-    background-color: lightgray;
-  }
-}
-
-@media only screen and (min-width:768px) {
-  .hiddenOnMediumScreens {
-    display: none;
-  }
-}
-/*
-.callUsCol {
-  line-height: 50px;
-  font-size: 1.1em;
-  /*nice orange background-color: #E62E00;
-  //display: flex;
-  text-align: center;
-  // color: #f05118;
-  color: #4c6b90;
-  font-weight: 600;
-}
 
 
 
-@media only screen and (min-width:768px) {
-  .callUsCol {
-    text-align: right;
-  }
-}
-*/
-#callUsColText {
-  display: inline-block;
-  color: #4c6b90;
-  padding-right: 10px;
-}
-
-@media only screen and (min-width:770px) and (max-width:870px) {
-  #callUsColText {
-    display: none;
-  }
-}
-
-
-
-
-@media only screen and (max-width:768px) {
-
-  .customMargin {
-    margin-top: 2px;
-    margin-bottom: 2px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-}
-
-
-
-
-.contactCol,
-.contactCol a,
-.contactCol a:link,
-.contactCol a:active,
-.contactCol a:hover,
-.contactCol a:visited {
-  text-decoration: none;
-  //color: #006ba1;
-  color: #006ba1;
-}
-
-#whatsapp {
-  color: #00b33c;
-}
-
-.menuLevel2:hover,
-.menuLevel2:link,
-.menuLevel2:active,
-.menuLevel2:hover,
-.menuLevel2:visited {
-  background-color: #C2CEDA;
-}
-
-
-@media only screen and (max-width:767px) {
-  .contactCol {
-    margin-bottom: 2px;
-    background-color: #E8ECF1;
-  }
-  /*
-    #contactCol1 {
-        border-bottom: 4px solid white;
-        border-left: 4px solid white;
-        border-right: 2px solid white;
-    }
-    #contactCol2 {
-        border-bottom: 4px solid white;
-        border-right: 4px solid white;
-        border-left: 2px solid white;
-    }*/
-}
-
-
-
-.contactCol:hover {
-  transition: .3s background-color;
-  color: #006747;
-}
-/*
-.contactText {
-  font-weight: 600;
-  font-size: 1.1em;
-}*/
-.contactText,
-.keyHeader,
-#burgerBar {
-  font-family: roboto-condensed-light, Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
-}
-
-@media only screen and (max-width:200px) {
-  .contactText,
-  .thumbnailDescription {
-    display: none;
-  }
-  /*.col-xs-1 .col-xs-2 .col-xs-3 .col-xs-4 .col-xs-5 .col-xs-6 .col-xs-7 .col-xs-8 .col-xs-9 .col-xs-10 .col-xs-11 {
-        padding-left: 5px;
-        padding-right: 5px;
-    }*/
-}
-
-.icon_sosa {
-  vertical-align: middle;
-  font-size: 2.2em;
-}
-/*-----------/Contact Columns-------------------*/
 /*----------Standard Horizontal NAV BAR -------------*/
 @media only screen and (max-width:768px) {
   div.scrollmenu {
@@ -589,6 +391,7 @@ div.scrollmenu a:visited {
   */
 /* border under links on hover */
 /*-------/Nav Bar-----------*/
+
 /*Overlay NAV BAR*/
 @media only screen and (min-width:778px) {
   #burgerBar {
@@ -604,6 +407,7 @@ div.scrollmenu a:visited {
   font-size: 26px;
   cursor: pointer;
   color: white;
+  font-family: roboto-condensed-light, Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
 }
 
 #burgerBarIcon {
@@ -667,101 +471,6 @@ div.scrollmenu a:visited {
 
 
 
-
-#homePage {
-  margin-left: 0px;
-  margin-right: 0px;
-}
-/*   Jumbotron   */
-#homePageJumbotron {
-  background-color: #007abf;
-  color: white;
-  padding-top: 15px;
-}
-
-#homePageJumbotronText {
-  padding-bottom: 40px;
-}
-
-@media only screen and (max-width: 540px) {
-  #homePageJumbotronText {
-    padding-left: 20px;
-  }
-}
-
-
-#adMainMessage {
-  font-size: 3em;
-  font-weight: 600;
-  line-height: 1.2em;
-  text-align: left; /*bootstrap override*/
-}
-
-@media only screen and (max-width: 479px) {
-
-  #adMainMessage {
-    font-size: 2.6em;
-    font-weight: 600;
-    line-height: 1.2em;
-    //text-align: right; /*bootstrap override*/
-  }
-  //   #adFooterMessage, #adSubMessage {
-  //   display: none;
-  //}
-}
-
-
-
-#adSubMessage {
-  font-size: 1.8em;
-  text-align: left; /*bootstrap override*/
-}
-
-
-
-#jumbotronBulletPoints {
-  padding-top: 15px;
-  padding-bottom: 10px;
-  text-align: left;
-}
-
-.fa-check {
-  padding-right: 8px;
-}
-
-
-@media only screen and (min-width: 480px) {
-
-  #jumbotronBulletPoints {
-    font-size: 1.2em;
-  }
-}
-/*----/Jumbotron */
-#routerContainer {
-}
-
-#welcomeAndContactForm {
-  background-color: #f5f5f5;
-}
-
-#welcomeText {
-  text-align: justify;
-  padding-bottom: 20px;
-}
-/*--- Quote Form*/
-#quoteForm {
-  border: 1px solid #ced4da;
-  background-color: white;
-  padding: 20px;
-}
-/*--- /Quote Form*/
-#referrals {
-  padding-bottom: 80px;
-}
-/*--Services*/
-serviceImage {
-  background-color: white;
-}
 /* ---- PRODUCT ICONS ------ */
 /*Services Icons*/
 #servicesPageHeader {
@@ -879,28 +588,8 @@ svg {
 #callUsBanner a {
   color: white;
 }
-/*------ Google Map*/
-#findUs {
-  padding-bottom: 60px;
-  background-color: white;
-}
 
-.googleMap {
-  max-width: 100%;
-  position: relative;
-  padding-bottom: 50%; // This is the aspect ratio
-  height: 0;
-  overflow: hidden;
-}
 
-.googleMap iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100% !important;
-  height: 100% !important;
-}
-/* ----- /Google Map*/
 /* ---- Referrals ------*/
 #referrals {
   background-color: #f5f5f5;
@@ -922,6 +611,8 @@ a {
   background-color: #f5f5f5;
 }
 /* ----/ Home Page about us*/
+
+
 /* ---- Common Footer*/
 #commonFooter {
   background-color: #31404e;
