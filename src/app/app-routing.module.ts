@@ -51,7 +51,8 @@ const routes: Routes = [
 
   //Rates
   { path: 'emergency-plumbing-prices', component: EmergencyPlumbingPricesComponent },
-  { path: 'non-emergency-plumbing-prices', component: NonEmergencyPlumbingPricesComponent },
+  //{ path: 'non-emergency-plumbing-prices', component: NonEmergencyPlumbingPricesComponent },
+  { path: 'non-emergency-plumbing-prices', component: EmergencyPlumbingPricesComponent },
 
   //Contact
   { path: 'contact-dublin-plumber', component: ContactDublinPlumberComponent },
