@@ -202,3 +202,65 @@
   font-size: 2.2em;
 }
 /*-----------/Contact Columns-------------------*/
+
+
+
+
+/*----------Standard Horizontal NAV BAR -------------*/
+@media only screen and (max-width:778px) {
+  div.scrollmenu {
+    display: none;
+  }
+}
+
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+  text-justify: inter-word;
+  background-color: #006199;
+  padding-top: .3em;
+  font-family: roboto-condensed-light, Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+}
+
+div.scrollmenu a {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.8em;
+  color: white;
+  padding-left: 3%;
+  padding-right: 3%;
+  border-bottom: .2em solid transparent;
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+  div.scrollmenu a {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width:992px) and (max-width:1200px) {
+  div.scrollmenu a {
+    font-size: 1.6em;
+  }
+}
+
+
+div.scrollmenu a:hover, a:focus, a:active, a:target {
+  border-bottom: .1em solid #00aaff;
+}
+/*
+div.scrollmenu a:active,
+div.scrollmenu a:hover {
+  color: whitesmoke;
+}
+
+  div.scrollmenu a:link,
+div.scrollmenu a:visited {
+  color: white;
+}
+  */
+/* border under links on hover */
+/*-------/Nav Bar-----------*/

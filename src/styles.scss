@@ -394,12 +394,12 @@ div.scrollmenu a:visited {
 
 /*Overlay NAV BAR*/
 @media only screen and (min-width:778px) {
-  #burgerBar {
+  #burgerBarVerticalNavBar {
     display: none;
   }
 }
 
-#burgerBar {
+#burgerBarVerticalNavBar {
   padding-left: 20px;
   padding-top: 4px;
   padding-bottom: 4px;
