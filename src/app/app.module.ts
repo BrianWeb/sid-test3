@@ -52,7 +52,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BookAppointmentComponent } from './book-appointment/book-appointment.component';
 import { BlogPostComponent } from './blog/blog-post/blog-post.component';
 import { BlogSidebarComponent } from './blog/blog-sidebar/blog-sidebar.component';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { NoopAnimationsModule, BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AreaDescriptionComponent } from './areas/area-description/area-description.component';
 
 
@@ -98,7 +98,9 @@ import { AreaDescriptionComponent } from './areas/area-description/area-descript
     //showdown Markdown
     ShowdownModule,
 
-    NoopAnimationsModule
+    NoopAnimationsModule,
+
+    BrowserAnimationsModule
 
 
     

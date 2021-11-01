@@ -32,11 +32,15 @@
               "src/sitemap_index.xml"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
               "src/assets/vendors/bootstrap.min.css",
               "src/styles.scss"
             ],
             "scripts": [],
-            "allowedCommonJsDependencies":["showdown"]
+            "allowedCommonJsDependencies": [
+              "showdown"
+            ]
           },
           "configurations": {
             "production": {
@@ -98,6 +102,8 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -129,6 +135,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "sid-app2"
 }
