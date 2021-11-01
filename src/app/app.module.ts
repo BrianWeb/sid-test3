@@ -39,7 +39,7 @@ import { ContentfulService } from './contentful.service/contentful.service';
 import { ContactService } from './common/contact.service';
 
 //Markdown
-import { NgxMdModule } from 'ngx-md';
+//import { NgxMdModule } from 'ngx-md';
 
 
 //Showdown Markdown
@@ -93,7 +93,7 @@ import { AreaDescriptionComponent } from './areas/area-description/area-descript
     HttpClientModule,
 
     //Markdown
-    NgxMdModule.forRoot(),
+    //NgxMdModule.forRoot(),
 
     //showdown Markdown
     ShowdownModule,
