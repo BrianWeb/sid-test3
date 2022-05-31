@@ -262,7 +262,7 @@ video {
 }*/
 .googleReviewStars {
   a {
-    color: #e6ffff;
+    color: white;
   }
 
   a:hover {
@@ -630,8 +630,7 @@ a {
     color: #00aaff;
   }
 }
-/* Importing Bootstrap SCSS file. 
-@import '~bootstrap/scss/bootstrap';*/
+
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

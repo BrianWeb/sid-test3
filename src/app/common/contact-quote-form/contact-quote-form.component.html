@@ -13,77 +13,18 @@
     <div class="form-group">
       <label for="Phone">Phone</label>
       <input type="number" class="form-control" name="Phone" aria-describedby="phone" placeholder="Phone number" formControlName="Phone">
-      <small id="phone" class="form-text text-muted">We'll never share your phone number with anyone else.</small>
+      <small id="phone" >We'll never share your phone number with anyone else.</small>
     </div>
     <div class="form-group">
       <label for="Email">Email</label>
       <input type="email" class="form-control" name="Email" aria-describedby="emailHelp" placeholder="Enter email" formControlName="Email">
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      <small id="emailHelp" >We'll never share your email with anyone else.</small>
     </div>
     <div class="form-group">
       <label for="comment">Comment</label>
-<textarea class="form-control" formControlName="Comment" name="Comment">
-</textarea>
+      <textarea class="form-control" formControlName="Comment" placeholder="Enter comment text here" name="Comment"></textarea>
     </div>
     <button type="submit" class="btn btn-primary" [disabled]="!FormData.valid">Submit</button>
   </form>
 
-
-
-  <!--
-
-    <form  [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
-
-
-      <div class="form-group">
-        <label for="fullname">Full Name *</label>
-        <input type="text" class="form-control" name="Fullname" id="exampleFormControlInput1" placeholder="name@example.com">
-
-        <label for="fullname">Full Name</label>
-        <input type="text" class="form-control" name="Fullname" placeholder="Full Name" formControlName="Fullname">
-
-      </div>
-      <div class="form-group">
-        <label for="email">Email Address *</label>
-        <input type="email" class="form-control"  formControlName="email" name="email"  aria-describedby="emailHelp"   id="exampleFormControlInput1" placeholder="name@example.com">
-      </div>
-      <div class="form-group">
-        <label for="exampleFormControlInput1">Phone Number *</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-      </div>
-      <div class="form-group">
-        <label for="exampleFormControlTextarea1">Tell us your requirements</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-
-    </form>
-
-  FORM 2:
-
-
-
-
-  <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
-    <div class="form-group">
-      <label for="Email">Email</label>
-      <input type="email" class="form-control" name="Email" aria-describedby="emailHelp" placeholder="Enter email" formControlName="Email">
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-    </div>
-    <div class="form-group">
-      <label for="fullname">Full Name</label>
-      <input type="text" class="form-control" name="Fullname" placeholder="Full Name" formControlName="Fullname">
-    </div>
-    <div class="form-group">
-      <label for="comment">Comment</label>
-      <textarea class="form-control" formControlName="Comment" name="Comment"></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary" [disabled]="!FormData.valid">Submit</button>
-  </form>
-
-      -->
 </div>
-
-
-
-
-

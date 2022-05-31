@@ -16,7 +16,7 @@ import { AreaDetailComponent } from './areas/area-detail/area-detail.component';
 
 //Rates:
 import { EmergencyPlumbingPricesComponent } from './emergency-plumbing-prices/emergency-plumbing-prices.component';
-import { NonEmergencyPlumbingPricesComponent } from './non-emergency-plumbing-prices/non-emergency-plumbing-prices.component';
+
 
 //Contact:
 import { ContactDublinPlumberComponent } from './contact-dublin-plumber/contact-dublin-plumber.component';
