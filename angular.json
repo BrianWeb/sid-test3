@@ -36,9 +36,12 @@
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
               "src/assets/vendors/bootstrap.min.css",
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/fonts/font_awesome/css/all.min.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "src/fonts/font_awesome/1f51e29b01.js"
+            ],
             "allowedCommonJsDependencies": [
               "showdown"
             ]
