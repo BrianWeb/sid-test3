@@ -8,7 +8,13 @@
       <a href="home">
         <div id="logo">
           <!--<img src="..\assets\images\logo_with_company_name.jpg" id="logoWithCompanyName">-->
-          <img src="..\assets\images\logo.jpg" id="logoImage" alt="Sids Plumbing Company Logo">
+
+          <picture id="sidNoBackgroundSmall" alt="Sids Plumbing Company Logo">
+            <source type="image/webp" srcset="..\assets\images\logo.webp">
+            <source type="image/jpeg" srcset="..\assets\images\logo.jpg">
+            <img src="..\assets\images\logo.jpg" id="logoImage" alt="Sids Plumbing Company Logo">
+          </picture>
+
 
           <div id="company_name">
             Sid's Plumbing
@@ -43,7 +49,7 @@
           </span>-->
           <a href="https://wa.me/353866049361?text=Plumbing%Enquiry" title="Whatsapp Chat" alt="Whatsapp Chat link">
             <span id="whatsapp">
-              <i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i>&nbsp;
+              <i class="fa-brands fa-whatsapp fa-lg" aria-hidden="true"></i>&nbsp;
               <span class="contactText hiddenOnMediumScreens"> WhatsApp chat</span>
             </span>
           </a>
