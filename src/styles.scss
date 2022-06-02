@@ -274,32 +274,38 @@ video {
 @font-face {
   font-family: evogria;
   src: url(fonts/evogria.otf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: velocista;
   src: url(fonts/velocista.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: upbolters;
   src: url(fonts/upbolters.otf);
+  font-display: swap;
 }
 
 
 @font-face {
   font-family: 'segoe-ui';
   src: url('fonts/segoe-ui.ttf') format('truetype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'segoe-ui-light';
   src: url('fonts/segoe-ui-light.ttf') format('truetype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'roboto-condensed-light';
   src: url('fonts/roboto-condensed-light.ttf') format('truetype');
+  font-display: swap;
 }
 
 
