@@ -40,7 +40,7 @@
               "src/fonts/font_awesome/css/all.min.css"
             ],
             "scripts": [
-              "src/fonts/font_awesome/1f51e29b01.js"
+           
             ],
             "allowedCommonJsDependencies": [
               "showdown"
