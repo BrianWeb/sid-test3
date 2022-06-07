@@ -54,6 +54,7 @@ import { BlogPostComponent } from './blog/blog-post/blog-post.component';
 import { BlogSidebarComponent } from './blog/blog-sidebar/blog-sidebar.component';
 import { NoopAnimationsModule, BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AreaDescriptionComponent } from './areas/area-description/area-description.component';
+import { ContactFormComponent } from './common/contact-form/contact-form/contact-form.component';
 
 
 
@@ -83,7 +84,8 @@ import { AreaDescriptionComponent } from './areas/area-description/area-descript
     BookAppointmentComponent,
     BlogPostComponent,
     BlogSidebarComponent,
-    AreaDescriptionComponent
+    AreaDescriptionComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,

@@ -32,7 +32,7 @@ export class ContactQuoteFormComponent implements OnInit {
     console.log(FormData)
     this.contact.PostMessage(FormData)
       .subscribe(response => {
-        location.href = 'https://mailthis.to/confirm'
+        location.href = 'https://formsubmit.co/448147e1d6152ef53c69891219c17f48'
         console.log(response)
       }, error => {
         console.warn(error.responseText)
