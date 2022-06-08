@@ -21,6 +21,10 @@ import { EmergencyPlumbingPricesComponent } from './emergency-plumbing-prices/em
 //Contact:
 import { ContactDublinPlumberComponent } from './contact-dublin-plumber/contact-dublin-plumber.component';
 
+import { ContactComponent } from './common/contact-form/contact/contact.component';
+import { SuccessComponent } from './common/contact-form/success/success.component';
+import { PageNotFoundComponent } from './common/contact-form/page-not-found/page-not-found.component';
+
 //About:
 import { AboutUsComponent } from './common/about-us/about-us.component';
 
@@ -56,6 +60,10 @@ const routes: Routes = [
 
   //Contact
   { path: 'contact-dublin-plumber', component: ContactDublinPlumberComponent },
+
+  { path: 'contact', component: ContactComponent },
+  { path: 'success', component: SuccessComponent },
+  //{ path: '**', component: PageNotFoundComponent },
 
   //About
   { path: 'about-us', component: AboutUsComponent },
