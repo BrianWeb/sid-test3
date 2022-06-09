@@ -27,8 +27,8 @@ export class ContactComponent implements OnInit {
     phone: ['', Validators.required],
     email: ['', [Validators.email, Validators.required]],
     //type: ['', Validators.required],
-    description: ['', Validators.required],
-    rating: [0, Validators.min(1)]
+    description: ['', Validators.required]
+    //rating: [0, Validators.min(1)]
   });
 
   errorMsg = '';

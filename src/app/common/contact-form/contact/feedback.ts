@@ -7,6 +7,6 @@ export interface Feedback {
   email: string;
   type: string;
   description: string;
-  rating: number;
+  //rating: number;
 }
 
