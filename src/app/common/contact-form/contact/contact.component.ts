@@ -24,8 +24,9 @@ export class ContactComponent implements OnInit {
   feedbackForm = this.fb.group({
     firstName: ['', Validators.required],
     lastName: ['', Validators.required],
+    phone: ['', Validators.required],
     email: ['', [Validators.email, Validators.required]],
-    type: ['', Validators.required],
+    //type: ['', Validators.required],
     description: ['', Validators.required],
     rating: [0, Validators.min(1)]
   });
@@ -49,8 +50,6 @@ export class ContactComponent implements OnInit {
   closeError() {
     this.errorMsg = '';
   }
-
-
 
 
   ngOnInit(): void {
